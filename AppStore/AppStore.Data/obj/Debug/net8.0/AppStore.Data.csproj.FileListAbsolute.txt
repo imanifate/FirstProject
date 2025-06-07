@@ -1,0 +1,17 @@
+D:\asp\project\AppStore\AppStore.Data\bin\Debug\net8.0\AppStore.Data.deps.json
+D:\asp\project\AppStore\AppStore.Data\bin\Debug\net8.0\AppStore.Data.runtimeconfig.json
+D:\asp\project\AppStore\AppStore.Data\bin\Debug\net8.0\AppStore.Data.dll
+D:\asp\project\AppStore\AppStore.Data\bin\Debug\net8.0\AppStore.Data.pdb
+D:\asp\project\AppStore\AppStore.Data\bin\Debug\net8.0\AppStore.Domain.dll
+D:\asp\project\AppStore\AppStore.Data\bin\Debug\net8.0\AppStore.Domain.pdb
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.csproj.AssemblyReference.cache
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.AssemblyInfoInputs.cache
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.AssemblyInfo.cs
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.csproj.CoreCompileInputs.cache
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.81867884.Up2Date
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.dll
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\refint\AppStore.Data.dll
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.pdb
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\AppStore.Data.genruntimeconfig.cache
+D:\asp\project\AppStore\AppStore.Data\obj\Debug\net8.0\ref\AppStore.Data.dll

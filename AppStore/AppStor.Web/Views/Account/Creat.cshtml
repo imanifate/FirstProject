@@ -1,0 +1,36 @@
+﻿@using AppStore.Domain.ViewModels
+@model CreatAccountViewModel
+
+@{
+    ViewBag.Titel = "ثبت نام";
+
+}
+
+<section class="border-radius">
+    <header><h3>ثبت نام</h3></header>
+    <article>
+        <div class="col-md-10 col-sm-10 col-xs-12">
+
+            <form asp-action="Creat" asp-controller="Account" method="post">
+                <div class="form-group">
+                    <input asp-for="UserName" type="text" class="form-control" placeholder="نام کاربری ">
+                </div>
+                <div class="form-group">
+                    <input asp-for="Email" type="email" class="form-control" placeholder=" ایمیل ">
+                </div>
+                <div class="form-group">
+                    <input asp-for="Password" type="password" class="form-control" pl aceholder="رمز عبور">
+                </div>
+                <div class="form-group">
+                    <input asp-for="RePassword" type="password" class="form-control" placeholder="تکرار رمز عبور ">
+                </div>
+                <label><input asp-for="Rules" type="checkbox"> قوانین را میپذیرم  </label>
+                <input type="submit" value="ثبت نام">
+                <div asp-validation-summary="All"></div>
+            </form>
+
+        </div>
+        <div class="clearfix"></div>
+    </article>
+</section>
+

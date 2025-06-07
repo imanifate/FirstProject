@@ -1,0 +1,17 @@
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Aplication.deps.json
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Aplication.dll
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Aplication.pdb
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Data.dll
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Domain.dll
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Data.pdb
+D:\asp\project\AppStore\AppStore.Aplication\bin\Debug\net8.0\AppStore.Domain.pdb
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.csproj.AssemblyReference.cache
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.AssemblyInfoInputs.cache
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.AssemblyInfo.cs
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.csproj.CoreCompileInputs.cache
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.C1D80AD2.Up2Date
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.dll
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\refint\AppStore.Aplication.dll
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\AppStore.Aplication.pdb
+D:\asp\project\AppStore\AppStore.Aplication\obj\Debug\net8.0\ref\AppStore.Aplication.dll

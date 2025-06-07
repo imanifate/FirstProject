@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "INZ0IVlZUGc=",
+  "success": true,
+  "projectFilePath": "D:\\asp\\Project\\AppStore\\AppStore.Domain\\AppStore.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\imani\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

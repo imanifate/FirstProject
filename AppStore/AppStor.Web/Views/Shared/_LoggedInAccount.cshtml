@@ -1,0 +1,12 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <li><a><i class="fa fa-user-plus"></i> <label>@User.Identity.Name خوش آمدید !</label> </a></li>
+    <li><a asp-controller="Account" asp-action="logout"><i class="fa fa-user"></i> <label>خروج</label> </a></li>
+
+}
+else
+{
+    <li><a asp-action="Creat" asp-controller="Account"><i class="fa fa-user-plus"></i> <label>عضویت</label> </a></li>
+    <li><a asp-action="Login" asp-controller="Account"><i class="fa fa-user"></i> <label>ورود به سایت</label> </a></li>
+
+}
