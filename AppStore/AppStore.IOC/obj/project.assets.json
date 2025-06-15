@@ -2814,7 +2814,7 @@
       "projectName": "AppStore.IOC",
       "projectPath": "D:\\asp\\Project\\AppStore\\AppStore.IOC\\AppStore.IOC.csproj",
       "packagesPath": "C:\\Users\\imani\\.nuget\\packages\\",
-      "outputPath": "D:\\asp\\project\\AppStore\\AppStore.IOC\\obj\\",
+      "outputPath": "D:\\asp\\Project\\AppStore\\AppStore.IOC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

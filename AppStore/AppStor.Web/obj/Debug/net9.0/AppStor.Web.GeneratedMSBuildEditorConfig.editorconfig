@@ -32,8 +32,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/AccountList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcQWNjb3VudExpc3QuY3NodG1s
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Creat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcQ3JlYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/_ViewImports.cshtml]
@@ -44,16 +52,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/asp/Project/AppStore/AppStor.Web/Areas/UserPanel/Views/Home/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclBhbmVsXFZpZXdzXEhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/asp/Project/AppStore/AppStor.Web/Views/Account/Active.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY3RpdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/Project/AppStore/AppStor.Web/Views/Account/Creat.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/asp/Project/AppStore/AppStor.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/asp/Project/AppStore/AppStor.Web/Views/Home/Index.cshtml]

@@ -17,27 +17,109 @@ namespace AppStore.Aplication.Services.Implements
 {
     public class AccountServices(IAccountRepository accountRepository): IAccountServices
     {
-        public ResultCreat Creat(CreatAccountViewModel creatAccountViewModel)
+        public List<ListAccountViewModels> List()
         {
-            if (creatAccountViewModel != null)
+
+            List<Account> accounts = accountRepository.List();
+            
+            return accounts.Select(c => new ListAccountViewModels()
             {
-                if (accountRepository.EmailDuplicate(creatAccountViewModel.Email)) return ResultCreat.EmailDuplicated;
-                if (accountRepository.UserNameDuplicate(creatAccountViewModel.UserName)) return ResultCreat.UsreNameDuplicated;
+                AccountId = c.Id,
+                UserName = c.UserName,
+                Email = c.Email,
+                CreatDate = c.CreatDate,
+                IsActive = c.IsActive,
+                IsAdmin = c.IsAdmin,
+                IsDelete = c.IsDelete
+            }).ToList();
+        }
+
+        public ResultCreat Register(RegisterAccountViewModel registerAccountViewModel)
+        {
+            if (registerAccountViewModel != null)
+            {
+                if (accountRepository.EmailExite(registerAccountViewModel.Email)) return ResultCreat.EmailDuplicated;
+                if (accountRepository.UserNameExite(registerAccountViewModel.UserName)) return ResultCreat.UsreNameDuplicated;
                 accountRepository.Creat(new Account
                 {
-                    UserName = creatAccountViewModel.UserName,
-                    Email = creatAccountViewModel.Email,
-                    Password = PasswordHasher.EncodePasswordMd5(creatAccountViewModel.Password),
-                    Rules = creatAccountViewModel.Rules,
-                    ActiveCode = creatAccountViewModel.ActiveCode
+                    UserName = registerAccountViewModel.UserName,
+                    Email = registerAccountViewModel.Email,
+                    Password = PasswordHasher.EncodePasswordMd5(registerAccountViewModel.Password),
+                    Rules = registerAccountViewModel.Rules,
+                    ActiveCode = registerAccountViewModel.ActiveCode
                 });
                 accountRepository.Save();
                 return ResultCreat.Success;
             }
             else return ResultCreat.Null;
         }
-            
-       
+        public ResultCreat Creat(CreatAccountViewModel creatAccountViewModel)
+        {
+            if (creatAccountViewModel != null)
+            {
+                if (accountRepository.UserNameExite(creatAccountViewModel.Email)) return ResultCreat.EmailDuplicated;
+                if (accountRepository.UserNameExite(creatAccountViewModel.UserName)) return ResultCreat.UsreNameDuplicated;
+                accountRepository.Creat(new Account
+                {
+                    UserName = creatAccountViewModel.UserName,
+                    Email = creatAccountViewModel.Email,
+                    Password = PasswordHasher.EncodePasswordMd5(creatAccountViewModel.Password),
+                    Rules = true,
+                    ActiveCode = creatAccountViewModel.ActiveCode,
+                    IsActive = creatAccountViewModel.IsActive,
+                    IsAdmin =   creatAccountViewModel.IsAdmin,
+                });
+                accountRepository.Save();
+                return ResultCreat.Success;
+            }
+            else return ResultCreat.Null;
+        }
+
+        
+        public EditAccountViewModel GetByIdForEdit(int id)
+        {
+           Account account = accountRepository.GetById(id);
+            if (account == null) return null;
+            return new EditAccountViewModel()
+            {
+                AccountId= account.Id,
+               UserName= account.UserName,
+               Email = account.Email,
+               IsActive= account.IsActive,
+               IsAdmin= account.IsAdmin,
+               IsDelete = account.IsDelete
+            };
+
+        }
+
+       public ResultEdit Edit(EditAccountViewModel editAccountViewModel)
+        {
+            Account account = accountRepository.GetById(editAccountViewModel.AccountId);
+            if(account==null) return ResultEdit.Null;
+            if(accountRepository.EmailDuplicate(editAccountViewModel) ) return ResultEdit.EmailDuplicated;
+            if (accountRepository.UserNameDuplicate(editAccountViewModel) ) return ResultEdit.UsreNameDuplicated;
+            account.UserName = editAccountViewModel.UserName;
+            account.Email = editAccountViewModel.Email;
+            account.IsActive = editAccountViewModel.IsActive;
+            account.IsAdmin = editAccountViewModel.IsAdmin;
+            account.IsDelete = editAccountViewModel.IsDelete;
+            account.ModifiedDate = editAccountViewModel.ModifiedDate;
+            accountRepository.EditAccount(account);
+            accountRepository.Save();
+            return ResultEdit.Success;
+        }
+
+        public ResultDelete Delete(int accountId)
+        {
+            Account account=accountRepository.GetById(accountId);   
+            if( account==null ) return ResultDelete.Null;
+            account.IsDelete= true;
+            accountRepository.EditAccount(account);
+            accountRepository.Save();
+            return ResultDelete.Success;
+        }
+
+
         public ResultActivaAccount UserActivate(string ActiveCode)
         {
             Account account = accountRepository.GetByIsActive(ActiveCode);

@@ -9,7 +9,6 @@ namespace AppStore.Domain.Contracts
 {
     public interface IUserAccountRepository
     {
-        List<Account> AccountList();
 
     }
 }

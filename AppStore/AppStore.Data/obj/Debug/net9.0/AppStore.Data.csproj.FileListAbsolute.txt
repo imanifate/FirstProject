@@ -9,6 +9,7 @@ D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.Data.GeneratedMS
 D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.Data.AssemblyInfoInputs.cache
 D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.Data.AssemblyInfo.cs
 D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.Data.csproj.CoreCompileInputs.cache
+D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.Data.sourcelink.json
 D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.81867884.Up2Date
 D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\AppStore.Data.dll
 D:\asp\Project\AppStore\AppStore.Data\obj\Debug\net9.0\refint\AppStore.Data.dll

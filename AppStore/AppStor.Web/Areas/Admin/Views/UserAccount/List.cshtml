@@ -1,5 +1,5 @@
 ﻿@using AppStore.Domain.ViewModels
-@model List<AccountListViewModels>
+@model List<ListAccountViewModels>
 
 @{
     ViewData["Title"] = "لیست کاربران";
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="row d-flex justify-content-start">
-            <a asp-action="Creat" class="btn btn-primary d-inline-flex align-items-center">
+            <a asp-action="Creat" asp-controller="UserAccount" asp-area="Admin" class="btn btn-primary d-inline-flex align-items-center">
                 <i class="fa fa-plus"></i><span class="mr-2">افزودن کاربر جدید</span>
             </a>
         </div>
@@ -47,7 +47,8 @@
                         </tr>
                         @foreach (var item in Model)
                         {
-                            <tr>
+                            var rowClass = item.IsDelete ? "table-danger" : "";
+                            <tr class="@rowClass">
                                 <td>@Model.IndexOf(item)</td>
                                 <td> @item.CreatDate </td>
                                 <td>@item.UserName</td>
@@ -60,13 +61,13 @@
                                     <a asp-action="Edit" asp-route-Id="@item.AccountId" class="btn btn-warning d-inline-flex align-items-center">
                                         <i class="fa fa-edit"></i><span class="mr-2">ویرایش</span>
                                     </a>
-                                    <a asp-action="Delete" asp-route-Id="Id" class="btn btn-danger d-inline-flex align-items-center">
+                                    <a asp-action="Delete" asp-route-Id="@item.AccountId" class="btn btn-danger d-inline-flex align-items-center">
                                         <i class="fa fa-trash"></i><span class="mr-2">حذف</span>
                                     </a>
 
                                 </td>
                                 
-
+                                
                             </tr>
                         }
                     </tbody>

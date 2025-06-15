@@ -1,3 +1,4 @@
+using AppStor.Web.Middleware;
 using AppStore.Aplication.Services.Implements;
 using AppStore.Aplication.Services.Interfaces;
 using AppStore.Data.Context;
@@ -54,8 +55,9 @@ app.UseRouting();
 app.UseAuthorization();
 
 
+app.UseMiddleware<CheckAdmin>();
 
-    app.MapControllerRoute(
+app.MapControllerRoute(
       name: "areas",
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 

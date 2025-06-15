@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Contracts;
-using System.Formats.Asn1;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +10,7 @@ namespace AppStore.Domain.ViewModels
 {
     public class CreatAccountViewModel
     {
-        public int Id { get; set; }
+       
 
         [Display(Name = "نام کاربری")]
         [MaxLength(100)]
@@ -23,20 +22,14 @@ namespace AppStore.Domain.ViewModels
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public string Password { get; set; }
 
-        [Display(Name = "تکرار رمز")]
-        [MaxLength(200)]
-        [Compare("Password")]
-        [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public string RePassword { get; set; }
-
         [Display(Name = "ایمیل")]
         [MaxLength(200)]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public string Email { get; set; }
+        public bool IsAdmin { get; set; }= false;
+        public bool IsActive { get; set; }=true;
+        public bool IsDelete { get; set; } = false;
+        public string ActiveCode { get; set; } = "12345";
 
-        [Display(Name = "قوانین را میپذیرم")]
-        [Required(ErrorMessage = "لطفا قوانین را مطالعه کنید")]
-        public bool Rules { get; set; }
-        public string ActiveCode { get; set; } = string.Empty;
     }
 }

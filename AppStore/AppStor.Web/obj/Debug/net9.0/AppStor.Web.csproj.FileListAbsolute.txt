@@ -263,6 +263,7 @@ D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.csproj.CoreComp
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.RazorAssemblyInfo.cache
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.RazorAssemblyInfo.cs
+D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.sourcelink.json
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\scopedcss\bundle\AppStor.Web.styles.css
@@ -1106,3 +1107,13 @@ D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\refint\AppStor.Web.dll
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.pdb
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\AppStor.Web.genruntimeconfig.cache
 D:\asp\Project\AppStore\AppStor.Web\obj\Debug\net9.0\ref\AppStor.Web.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\System.Web.Mvc.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\System.Web.Razor.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\System.Web.Helpers.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\System.Web.WebPages.Deployment.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\System.Web.WebPages.Razor.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\System.Web.WebPages.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\Newtonsoft.JsonResult.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\ZiggyCreatures.FusionCache.dll
+D:\asp\Project\AppStore\AppStor.Web\bin\Debug\net9.0\ZiggyCreatures.FusionCache.Serialization.NewtonsoftJson.dll

@@ -9,7 +9,6 @@ namespace AppStore.Aplication.Services.Interfaces
 {
     public interface IUserAccountServices
     {
-        List<AccountListViewModels> AccountList();
 
     }
 }

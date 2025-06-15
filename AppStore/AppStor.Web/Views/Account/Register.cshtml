@@ -1,5 +1,5 @@
 ﻿@using AppStore.Domain.ViewModels
-@model CreatAccountViewModel
+@model RegisterAccountViewModel
 
 @{
     ViewBag.Titel = "ثبت نام";
@@ -11,7 +11,7 @@
     <article>
         <div class="col-md-10 col-sm-10 col-xs-12">
 
-            <form asp-action="Creat" asp-controller="Account" method="post">
+            <form asp-action="Register" asp-controller="Account" method="post">
                 <div class="form-group">
                     <input asp-for="UserName" type="text" class="form-control" placeholder="نام کاربری ">
                 </div>

@@ -2796,7 +2796,7 @@
       "projectName": "AppStore.Aplication",
       "projectPath": "D:\\asp\\Project\\AppStore\\AppStore.Aplication\\AppStore.Aplication.csproj",
       "packagesPath": "C:\\Users\\imani\\.nuget\\packages\\",
-      "outputPath": "D:\\asp\\project\\AppStore\\AppStore.Aplication\\obj\\",
+      "outputPath": "D:\\asp\\Project\\AppStore\\AppStore.Aplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

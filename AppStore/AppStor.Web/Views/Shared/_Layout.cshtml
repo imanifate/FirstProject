@@ -295,11 +295,12 @@
         </div>
     </footer>
     <partial name="_SweatAlertPartial" />
+    @RenderSection("Scripts", false)
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/script.js"></script>
-    @RenderSection("Scripts", false)
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>

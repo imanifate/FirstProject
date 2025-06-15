@@ -7,20 +7,74 @@ using Microsoft.AspNetCore.Mvc;
 namespace AppStor.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class UserAccountController(IUserAccountServices userAccountServices) : BaseController
+    public class UserAccountController(IAccountServices accountServices) : BaseController
     {
         [HttpGet("AccountList")]
-        public IActionResult AccountList()
+        public IActionResult List()
         {
-            List<AccountListViewModels> accounts = userAccountServices.AccountList();
-            return View(accounts);
+            List<ListAccountViewModels> list = accountServices.List();
+            return View(list);
         }
 
 
-        [HttpGet("")]
+        [HttpGet("Creat")]
         public IActionResult Creat()
         {
             return View();
         }
+
+        [HttpPost("Creat")]
+        public IActionResult Creat(CreatAccountViewModel creatAccountByAdminViewModel)
+        {
+            if(!ModelState.IsValid) return View(creatAccountByAdminViewModel);
+         ResultCreat result = accountServices.Creat(creatAccountByAdminViewModel);
+            switch (result)
+            {
+                case ResultCreat.Success: ModelState.AddModelError("Success", "ثبت نام با موفقیت انجام شد"); return RedirectToAction(nameof(List));
+                case ResultCreat.UsreNameDuplicated: ModelState.AddModelError("Error", "نام کاربری وارد شده تکراری است"); break;
+                case ResultCreat.EmailDuplicated: ModelState.AddModelError("Error", "ایمیل وارد شده تکراری است"); break;
+                case ResultCreat.Error: ModelState.AddModelError("Error", "ثبت نام با خطا مواجه شد"); break;
+                default: ModelState.AddModelError("Error", "ثبت نام با خطا مواجه شد"); break;
+            }
+            return View();
+        }
+
+        [HttpGet("Edit")]
+        public IActionResult Edit(int id)
+        {
+            EditAccountViewModel editAccountViewModel = accountServices.GetByIdForEdit(id);
+            return View(editAccountViewModel);
+        }
+
+        [HttpPost("Edit")]
+        public IActionResult Edit(EditAccountViewModel editAccountViewModel)
+        {
+            if(!ModelState.IsValid) return View(editAccountViewModel);
+            ResultEdit result = accountServices.Edit(editAccountViewModel);
+            switch (result)
+            {
+                case ResultEdit.Success: ModelState.AddModelError("Success", " ویرایش با موفقیت انجام شد"); return RedirectToAction(nameof(List));
+                case ResultEdit.UsreNameDuplicated: ModelState.AddModelError("Error", "نام کاربری وارد شده تکراری است"); break;
+                case ResultEdit.EmailDuplicated: ModelState.AddModelError("Error", "ایمیل وارد شده تکراری است"); break;
+                case ResultEdit.Error: ModelState.AddModelError("Error", " ویرایش با خطا مواجه شد"); break;
+                default: ModelState.AddModelError("Error", " ویرایش با خطا مواجه شد"); break;
+            }
+
+            return View(editAccountViewModel);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            if (!ModelState.IsValid) return View(nameof(List));
+            ResultDelete result = accountServices.Delete(id);
+            switch (result)
+            {
+                case ResultDelete.Success: ModelState.AddModelError("Success", " حذف با موفقیت انجام شد"); return RedirectToAction(nameof(List));
+                case ResultDelete.Null: ModelState.AddModelError("Error", " کاربر مورد نظر یافت نشد"); break;
+                default: ModelState.AddModelError("Error", " حذف با خطا مواجه شد"); break;
+            }
+          return View(nameof(List));
+        }
+
     }
 }

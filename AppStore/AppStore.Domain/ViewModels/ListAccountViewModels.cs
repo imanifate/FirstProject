@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppStore.Domain.ViewModels
 {
-    public class AccountListViewModels
+    public class ListAccountViewModels
     {
         public int AccountId { get; set; }
      

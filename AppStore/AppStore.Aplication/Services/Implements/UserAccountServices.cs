@@ -12,19 +12,5 @@ namespace AppStore.Aplication.Services.Implements
 {
     public class UserAccountServices (IUserAccountRepository userAccountRepository): IUserAccountServices
     {
-        public List<AccountListViewModels> AccountList()
-        {
-            List<Account> accounts = userAccountRepository.AccountList();
-            return accounts.Select( c => new AccountListViewModels()
-            {
-                AccountId = c.Id,
-                UserName = c.UserName,
-                Email = c.Email,
-                CreatDate= c.CreatDate,
-                IsActive = c.IsActive,
-                IsAdmin = c.IsAdmin,
-                IsDelete = c.IsDelete
-            }).ToList();
-        }
-    }
+           }
 }

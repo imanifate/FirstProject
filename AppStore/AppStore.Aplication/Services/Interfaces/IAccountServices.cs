@@ -11,10 +11,16 @@ namespace AppStore.Aplication.Services.Interfaces
 {
     public interface IAccountServices
     {
-        ResultCreat Creat(CreatAccountViewModel creatAccountViewModel);
+        ResultCreat Register(RegisterAccountViewModel creatAccountViewModel);
+        ResultCreat Creat(CreatAccountViewModel creatAccountByAdminViewModel);
+        EditAccountViewModel GetByIdForEdit(int id);
+        ResultEdit Edit(EditAccountViewModel editAccountViewModel);
+        ResultDelete Delete(int accountId);
 
         ResultActivaAccount UserActivate(string ActiveCode);
         Account Login(LoginAccountViewModel login);
+        List<ListAccountViewModels> List();
+
 
 
     }

@@ -16,18 +16,18 @@ namespace AppStore.Web.Controllers
 {
     public class AccountController(IAccountServices accountServices) : BaseController
     {
-        [HttpGet("Creat")]
-        public IActionResult Creat()
+        [HttpGet("Register")]
+        public IActionResult Register()
         {
             return View();
         }
 
-        [HttpPost("Creat")]
-        public IActionResult Creat(CreatAccountViewModel creatAccountViewModel)
+        [HttpPost("Register")]
+        public IActionResult Register(RegisterAccountViewModel creatAccountViewModel)
         {
-            if(!ModelState.IsValid) return View(nameof(Creat));
+            if(!ModelState.IsValid) return View(nameof(Register));
             creatAccountViewModel.ActiveCode = CodeGenerators.ActiveCode();
-            ResultCreat result=accountServices.Creat(creatAccountViewModel);
+            ResultCreat result=accountServices.Register(creatAccountViewModel);
             switch (result)
             {
                 case ResultCreat.Success:
@@ -87,7 +87,7 @@ namespace AppStore.Web.Controllers
         [HttpPost("Login")]
         public IActionResult Login(LoginAccountViewModel login)
         {
-            if (!ModelState.IsValid) return View(nameof(Creat));
+            if (!ModelState.IsValid) return View(nameof(Register));
             Account account = accountServices.Login(login);
             if (account == null)
             {

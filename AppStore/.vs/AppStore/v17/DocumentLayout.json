@@ -1,7 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\asp\\Projecte\\AppStore\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\asp\\project\\AppStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73BBACBE-0D09-4900-9E6D-B58828CE9058}|Solution Items{73BBACBE-0D09-4900-9E6D-B58828CE9058}|D:\\asp\\project\\AppStore\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{73BBACBE-0D09-4900-9E6D-B58828CE9058}|Solution Items{73BBACBE-0D09-4900-9E6D-B58828CE9058}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|d:\\asp\\project\\appstore\\appstore.domain\\viewmodels\\changepasswordviewmodel .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|solutionrelative:appstore.domain\\viewmodels\\changepasswordviewmodel .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\userpanel\\views\\home\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\userpanel\\views\\home\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\userpanel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\userpanel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +43,81 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\asp\\project\\AppStore\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\asp\\project\\AppStore\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-15T07:17:20.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangePasswordViewModel .cs",
+              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStore.Domain\\ViewModels\\ChangePasswordViewModel .cs",
+              "RelativeDocumentMoniker": "AppStore.Domain\\ViewModels\\ChangePasswordViewModel .cs",
+              "ToolTip": "D:\\asp\\project\\AppStore\\AppStore.Domain\\ViewModels\\ChangePasswordViewModel .cs",
+              "RelativeToolTip": "AppStore.Domain\\ViewModels\\ChangePasswordViewModel .cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T21:19:37.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\UserPanel\\Views\\Home\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "AppStor.Web\\Areas\\UserPanel\\Views\\Home\\ChangePassword.cshtml",
+              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\UserPanel\\Views\\Home\\ChangePassword.cshtml",
+              "RelativeToolTip": "AppStor.Web\\Areas\\UserPanel\\Views\\Home\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T21:16:54.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\UserPanel\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AppStor.Web\\Areas\\UserPanel\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\UserPanel\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AppStor.Web\\Areas\\UserPanel\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T20:46:12.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AppStor.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AppStor.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T20:22:14.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "AppStor.Web\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "AppStor.Web\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T20:14:47.104Z",
+              "EditorCaption": ""
             }
           ]
         }
