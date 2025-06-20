@@ -1,3 +1,9 @@
+D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.csproj.AssemblyReference.cache
+D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.AssemblyInfoInputs.cache
+D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.AssemblyInfo.cs
+D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.csproj.CoreCompileInputs.cache
+D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.sourcelink.json
 D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Aplication.deps.json
 D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Aplication.dll
 D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Aplication.pdb
@@ -5,12 +11,6 @@ D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Data.dll
 D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Domain.dll
 D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Data.pdb
 D:\asp\Project\AppStore\AppStore.Aplication\bin\Debug\net9.0\AppStore.Domain.pdb
-D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.csproj.AssemblyReference.cache
-D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.GeneratedMSBuildEditorConfig.editorconfig
-D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.AssemblyInfoInputs.cache
-D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.AssemblyInfo.cs
-D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.csproj.CoreCompileInputs.cache
-D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.sourcelink.json
 D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.C1D80AD2.Up2Date
 D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\AppStore.Aplication.dll
 D:\asp\Project\AppStore\AppStore.Aplication\obj\Debug\net9.0\refint\AppStore.Aplication.dll

@@ -34,8 +34,8 @@ builder.Services.AddDbContext<AppStore_DB_Context>(options =>
 builder.Services.RegisterServices();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IAccountServices, AccountServices>();
-builder.Services.AddScoped<IUserAccountServices, UserAccountServices>();
-builder.Services.AddScoped<IUserAccountRepository, UserAccountRepository>();
+builder.Services.AddScoped<IProductGroupServices, ProductGroupServices>();
+builder.Services.AddScoped<IProductGroupRepository, ProductGroupRepository>();
 
 var app = builder.Build();
 
@@ -51,6 +51,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

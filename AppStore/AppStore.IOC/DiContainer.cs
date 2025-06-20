@@ -17,6 +17,9 @@ namespace AppStore.IOC
         {
             services.AddScoped<IAccountRepository  , AccountRepository>();
             services.AddScoped<IAccountServices  , AccountServices>();
+            services.AddScoped<IProductGroupRepository  , ProductGroupRepository>();
+            services.AddScoped<IProductGroupServices, ProductGroupServices>();
+
 
         }
     }

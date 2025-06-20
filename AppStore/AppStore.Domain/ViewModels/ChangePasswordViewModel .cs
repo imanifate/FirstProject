@@ -10,29 +10,28 @@ namespace AppStore.Domain.ViewModels
 {
     public class ChangePasswordViewModel
     {
-        [Display(Name = "نام کاربری یا ایمیل")]
-        [MaxLength(200)]
-        [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public string UserNameOrEmail { get; set; }
+        public int Id { get; set; }
 
-        [Display(Name = "نام کاربری یا ایمیل")]
-        [MaxLength(200)]
+        [Display(Name = "کلمه عبور فعلی")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public string UserNameOrEmail { get; set; }
+        [MaxLength(100)]
+        [DataType(DataType.Password)]
+        public string OldPassword { get; set; }
 
-        [Display(Name = "نام کاربری یا ایمیل")]
-        [MaxLength(200)]
+        [Display(Name = "کلمه عبور ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public string UserNameOrEmail { get; set; }
-
-
-        [Display(Name = " پسورد")]
-        [MaxLength(200)]
-        [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
+        [MaxLength(100)]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
 
-        
+        [Display(Name = "تکرار کلمه عبور")]
+        [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
+        [MaxLength(100)]
+        [DataType(DataType.Password)]
+        [Compare("Password",ErrorMessage  = "کلمه عبور مغایرت دارد")]
+        public string RePassword { get; set; }
+
 
     }
 }

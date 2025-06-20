@@ -13,14 +13,25 @@
 			<div class="col-md-10 col-sm-10 col-xs-12">
 
 				<form method="post" asp-action="Login" asp-controller="Account">
+					@if (User.Identity.IsAuthenticated)
+					{
+						<div class="alert alert-danger">
+							شما دسترسی به قسمت مورد نظر ندارید
+						</div>
+					}
+
 					<div class="form-group">
 						<input asp-for="UserNameOrEmail" type="text" class="form-control" placeholder="نام کاربری ">
+						<span asp-validation-for="UserNameOrEmail" class="inner-text"></span>
+
 					</div>
 					<div class="form-group">
 						<input asp-for="Password" type="password" class="form-control" placeholder="رمز عبور">
+						<span asp-validation-for="Password" class="inner-text"></span>
+
 					</div>
-					<p><a href=""><i class="fa fa-lock"></i>رمز عبور خود را فراموش کرده ام !</a></p>
-					<p><a href=""><i class="fa fa-user-plus"></i>ثبت نام کنید!</a></p>
+					<p><a asp-action="ForgetPassword" asp-controller="Account" ><i class="fa fa-lock"></i>رمز عبور خود را فراموش کرده ام !</a></p>
+					<p><a asp-action="Register" asp-controller="Account" ><i class="fa fa-user-plus"></i>ثبت نام کنید!</a></p>
 					<label><input asp-for="RemmberMe" type="checkbox"> مرا بخاطر بسپار! </label>
 					<input type="submit" value=" ورود به سایت">
 				</form>

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AppStore.Domain.ViewModels;
 
-namespace AppStore.Aplication.Services.Interfaces
+namespace AppStore.Domain.Enums
 {
-    public interface IUserAccountServices
+    public enum ResultChangePassword
     {
-
+        Success,Error,Null, OldPasswordInvalid
     }
 }

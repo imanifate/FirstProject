@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AppStore.Domain.Models;
 
-namespace AppStore.Domain.Contracts
+namespace AppStore.Domain.Enums
 {
-    public interface IUserAccountRepository
+    public enum ResultResetPassword
     {
-
+        Success,Error,Null, OldPasswordInvalid
     }
 }

@@ -17,97 +17,113 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppStor.Web
 build_property.RootNamespace = AppStor.Web
-build_property.ProjectDir = D:\asp\project\AppStore\AppStor.Web\
+build_property.ProjectDir = D:\asp\Project\AppStore\AppStor.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\asp\project\AppStore\AppStor.Web
+build_property.MSBuildProjectDirectory = D:\asp\Project\AppStore\AppStor.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/Home/Index.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Creat.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductGroup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEdyb3VwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Creat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcQ3JlYXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Edit.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/List.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlckFjY291bnRcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/_ViewImports.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/_ViewStart.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/UserPanel/Views/Home/ChangePassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclBhbmVsXFZpZXdzXEhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+[D:/asp/Project/AppStore/AppStor.Web/Areas/UserPanel/Views/UserInfo/CreatInfoUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclBhbmVsXFZpZXdzXFVzZXJJbmZvXENyZWF0SW5mb1VzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Account/Active.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/Active.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY3RpdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Account/Login.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Account/Register.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Home/AccessDenied.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Views/Home/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Home/Index.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Home/Privacy.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Shared/Error.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Shared/_LoggedInAccount.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Shared/_LoggedInAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dnZWRJbkFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Shared/_SweatAlertPartial.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Shared/_SweatAlertPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Td2VhdEFsZXJ0UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/_ViewImports.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Views/_ViewStart.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/project/AppStore/AppStor.Web/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-ur3hg2d5en
 
-[D:/asp/project/AppStore/AppStor.Web/Views/Shared/_Layout.cshtml]
+[D:/asp/Project/AppStore/AppStor.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-de0lhg6kzq

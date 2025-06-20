@@ -2,6 +2,7 @@
 
 namespace AppStor.Web.Areas.UserPanel.Controllers
 {
+    [Area("UserPanel")]
     public class HomeController : Controller
     {
         public IActionResult Index()
@@ -9,9 +10,6 @@ namespace AppStor.Web.Areas.UserPanel.Controllers
             return View();
         }
 
-        public IActionResult ChangePassword()
-        { 
-            return View();
-        }
+      
     }
 }

@@ -10,6 +10,7 @@ using AppStore.Domain.ViewModels;
 using AppStore.Aplication.Utilities;
 using AppStore.Web.Controllers;
 using AppStore.Domain.Models;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 
 
 namespace AppStore.Web.Controllers
@@ -117,6 +118,76 @@ namespace AppStore.Web.Controllers
         {
             HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
+        }
+
+
+
+        [HttpGet("ChangePassword")]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+
+        [HttpPost("ChangePassword")]
+        public IActionResult ChangePassword(ChangePasswordViewModel changePasswoed)
+        {
+
+            ResultChangePassword result = accountServices.ChangePassword(changePasswoed);
+            switch (result)
+            {
+                case ResultChangePassword.Success:
+                    {
+                        Logout();
+                        AlertMessage("تغییر رمز عبور با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+
+                        return RedirectToAction(nameof(Login));
+                    }
+                case ResultChangePassword.OldPasswordInvalid:
+                    AlertMessage("رمز وارد شده اشتباه میباشد", TitleAlert.خطا, IConeAlert.error); break;
+
+                case ResultChangePassword.Error:
+                    AlertMessage("خطا", TitleAlert.خطا, IConeAlert.error); break;
+
+            }
+
+            return View(nameof(ChangePassword));
+        }
+        [HttpGet("ForgetPassword")]
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost("ForgetPassword")]
+        public IActionResult ForgetPassword(ForgetPasswordViewModel forgetPasswordViewModel)
+        {
+            string activeCode = accountServices.GetActivCode(forgetPasswordViewModel);
+            if(activeCode == null)  ModelState.AddModelError("Error", "کد فعال سازی را وارد کنید");
+                MessageSender.Email(forgetPasswordViewModel.Email, "فعال سازی آسان بوک", $"به   خوش آمدید " +
+                              $"{Environment.NewLine} کد فعال سازی: {activeCode}");
+                return View(nameof(ResetPassword));
+        }
+
+        [HttpGet("ResetPassword")]
+        public IActionResult ResetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost("ResetPassword")]
+        public IActionResult ResetPassword(ResetPasswordViewMdel resetPasswordViewMdel)
+        {
+            if(!ModelState.IsValid) return View(nameof(Active));
+            ResultResetPassword result = accountServices.ResetPassword(resetPasswordViewMdel);
+            switch (result)
+            {
+                case ResultResetPassword.Success: return RedirectToAction(nameof(Login));
+                case ResultResetPassword.Null:
+                    AlertMessage("کد فعال سازی معتبر نیست!", TitleAlert.خطا, IConeAlert.error); break;
+            }
+
+            return View(resetPasswordViewMdel);
         }
 
     }

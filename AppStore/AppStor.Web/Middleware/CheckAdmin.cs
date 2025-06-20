@@ -1,7 +1,7 @@
 ﻿namespace AppStor.Web.Middleware
 {
 
-    public class CheckAdmin(RequestDelegate  next)
+    public class CheckAdmin(RequestDelegate next)
     {
         public async Task InvokeAsync(HttpContext httpContext)
         {
@@ -13,6 +13,10 @@
                     httpContext.Response.Redirect("/Home/AccessDenied");
             }
             await next(httpContext);
+
+
+
+
         }
     }
 }

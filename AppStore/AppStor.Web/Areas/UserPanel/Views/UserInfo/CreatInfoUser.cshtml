@@ -1,0 +1,44 @@
+﻿@using AppStore.Domain.ViewModels
+@model CreatUserInroViewModel
+
+@{
+    ViewBag.Titel = "اطلاعات کاربری";
+
+}
+
+<section class="border-radius">
+    <header><h3>اطلاعات کاربری</h3></header>
+    <article>
+        <div class="col-md-10 col-sm-10 col-xs-12">
+
+            <form asp-action="CreatInfoUser" asp-controller="UserInfo" method="post">
+                <div class="form-group">
+                    <input asp-for="NationalCode" type="text" class="form-control" placeholder="کد ملی">
+                    <span asp-validation-for="NationalCode" class="inner-text"></span>
+                </div>
+
+                <div class="form-group">
+                    <input asp-for="FullName" type="text" class="form-control" placeholder="نام و نام خانوادگی">
+                    <span asp-validation-for="FullName" class="inner-text"></span>
+                </div>
+                <div class="form-group">
+                    <input asp-for="PhoneNumber" type="text" class="form-control" placeholder=" شماره تلفن ">
+                    <span asp-validation-for="PhoneNumber" class="inner-text"></span>
+                </div>
+                <div class="form-group">
+                    <input asp-for="Address" type="text" class="form-control" placeholder="ادرس">
+                    <span asp-validation-for="Address" class="inner-text"></span>
+                </div>
+                
+                <div asp-validation-summary="All"></div>
+            </form>
+
+        </div>
+        <div class="clearfix"></div>
+    </article>
+</section>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

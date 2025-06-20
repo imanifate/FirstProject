@@ -15,5 +15,7 @@ namespace AppStore.Data.Context
 
         }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<ProductGroup> ProductGroups { get; set; }
+        public DbSet<ProductSubGroup> ProductSubGroups{ get; set; }
     }
 }

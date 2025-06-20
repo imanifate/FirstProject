@@ -15,13 +15,13 @@ using AppStore.Aplication.Utilities;
 
 namespace AppStore.Aplication.Services.Implements
 {
-    public class AccountServices(IAccountRepository accountRepository): IAccountServices
+    public class AccountServices(IAccountRepository accountRepository) : IAccountServices
     {
         public List<ListAccountViewModels> List()
         {
 
             List<Account> accounts = accountRepository.List();
-            
+
             return accounts.Select(c => new ListAccountViewModels()
             {
                 AccountId = c.Id,
@@ -67,7 +67,7 @@ namespace AppStore.Aplication.Services.Implements
                     Rules = true,
                     ActiveCode = creatAccountViewModel.ActiveCode,
                     IsActive = creatAccountViewModel.IsActive,
-                    IsAdmin =   creatAccountViewModel.IsAdmin,
+                    IsAdmin = creatAccountViewModel.IsAdmin,
                 });
                 accountRepository.Save();
                 return ResultCreat.Success;
@@ -75,29 +75,29 @@ namespace AppStore.Aplication.Services.Implements
             else return ResultCreat.Null;
         }
 
-        
+
         public EditAccountViewModel GetByIdForEdit(int id)
         {
-           Account account = accountRepository.GetById(id);
+            Account account = accountRepository.GetById(id);
             if (account == null) return null;
             return new EditAccountViewModel()
             {
-                AccountId= account.Id,
-               UserName= account.UserName,
-               Email = account.Email,
-               IsActive= account.IsActive,
-               IsAdmin= account.IsAdmin,
-               IsDelete = account.IsDelete
+                AccountId = account.Id,
+                UserName = account.UserName,
+                Email = account.Email,
+                IsActive = account.IsActive,
+                IsAdmin = account.IsAdmin,
+                IsDelete = account.IsDelete
             };
 
         }
 
-       public ResultEdit Edit(EditAccountViewModel editAccountViewModel)
+        public ResultEdit Edit(EditAccountViewModel editAccountViewModel)
         {
             Account account = accountRepository.GetById(editAccountViewModel.AccountId);
-            if(account==null) return ResultEdit.Null;
-            if(accountRepository.EmailDuplicate(editAccountViewModel) ) return ResultEdit.EmailDuplicated;
-            if (accountRepository.UserNameDuplicate(editAccountViewModel) ) return ResultEdit.UsreNameDuplicated;
+            if (account == null) return ResultEdit.Null;
+            if (accountRepository.EmailDuplicate(editAccountViewModel)) return ResultEdit.EmailDuplicated;
+            if (accountRepository.UserNameDuplicate(editAccountViewModel)) return ResultEdit.UsreNameDuplicated;
             account.UserName = editAccountViewModel.UserName;
             account.Email = editAccountViewModel.Email;
             account.IsActive = editAccountViewModel.IsActive;
@@ -111,9 +111,9 @@ namespace AppStore.Aplication.Services.Implements
 
         public ResultDelete Delete(int accountId)
         {
-            Account account=accountRepository.GetById(accountId);   
-            if( account==null ) return ResultDelete.Null;
-            account.IsDelete= true;
+            Account account = accountRepository.GetById(accountId);
+            if (account == null) return ResultDelete.Null;
+            account.IsDelete = true;
             accountRepository.EditAccount(account);
             accountRepository.Save();
             return ResultDelete.Success;
@@ -136,9 +136,42 @@ namespace AppStore.Aplication.Services.Implements
 
         public Account Login(LoginAccountViewModel login)
         {
-            Account account = accountRepository.Login(login.UserNameOrEmail , PasswordHasher.EncodePasswordMd5(login.Password));
+            Account account = accountRepository.Login(login.UserNameOrEmail, PasswordHasher.EncodePasswordMd5(login.Password));
             if (account == null) return null;
             return account;
+        }
+
+        public ResultChangePassword ChangePassword(ChangePasswordViewModel changePassword)
+        {
+            try
+            {
+                Account account = accountRepository.GetById(changePassword.Id);
+                string hashOldPassword = PasswordHasher.EncodePasswordMd5(changePassword.OldPassword);
+                if (account.Password != hashOldPassword) { return ResultChangePassword.OldPasswordInvalid; }
+                account.Password = PasswordHasher.EncodePasswordMd5(changePassword.Password);
+                accountRepository.EditAccount(account);
+                accountRepository.Save();
+                return ResultChangePassword.Success;
+
+            }
+            catch 
+            {
+                return ResultChangePassword.Error;
+            }
+        }
+        public ResultResetPassword ResetPassword(ResetPasswordViewMdel resetPasswordViewMdel)
+        {
+            Account account = accountRepository.GetByActiveCode(resetPasswordViewMdel.ActiveCode);
+            if(account == null) { return ResultResetPassword.Null; }
+            account.ActiveCode = CodeGenerators.ActiveCode();
+            account.Password = PasswordHasher.EncodePasswordMd5(resetPasswordViewMdel.Password);
+            accountRepository.EditAccount(account);
+            accountRepository.Save();
+            return ResultResetPassword.Success;
+        }
+        public string GetActivCode(ForgetPasswordViewModel forgetPasswordViewModel)
+        {
+            return accountRepository.GetByEmail(forgetPasswordViewModel.Email);
         }
     }
 }

@@ -59,6 +59,15 @@ namespace AppStore.Data.Repositoreis
           return  _appStore_DB_Context.Accounts.FirstOrDefault (i => i.Id == id);
             
         }
+        public string GetByEmail(string email)
+        {
+            return _appStore_DB_Context.Accounts.FirstOrDefault(e => e.Email == email).ActiveCode;
+        }
+
+        public Account GetByActiveCode(string activeCode)
+        {
+            return _appStore_DB_Context.Accounts.FirstOrDefault(a => a.ActiveCode == activeCode);
+        }
         public void EditAccount(Account account)
         {
             _appStore_DB_Context.Accounts.Update(account);

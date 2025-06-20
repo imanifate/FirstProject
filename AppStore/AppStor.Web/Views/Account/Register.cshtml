@@ -14,15 +14,19 @@
             <form asp-action="Register" asp-controller="Account" method="post">
                 <div class="form-group">
                     <input asp-for="UserName" type="text" class="form-control" placeholder="نام کاربری ">
+                    <span asp-validation-for="UserName" class="inner-text"></span>
                 </div>
                 <div class="form-group">
                     <input asp-for="Email" type="email" class="form-control" placeholder=" ایمیل ">
+                    <span asp-validation-for="Email" class="inner-text"></span>
                 </div>
                 <div class="form-group">
-                    <input asp-for="Password" type="password" class="form-control" pl aceholder="رمز عبور">
+                    <input asp-for="Password" type="password" class="form-control" placeholder="رمز عبور">
+                    <span asp-validation-for="Password" class="inner-text"></span>
                 </div>
                 <div class="form-group">
                     <input asp-for="RePassword" type="password" class="form-control" placeholder="تکرار رمز عبور ">
+                    <span asp-validation-for="RePassword" class="inner-text"></span>
                 </div>
                 <label><input asp-for="Rules" type="checkbox"> قوانین را میپذیرم  </label>
                 <input type="submit" value="ثبت نام">
@@ -34,3 +38,7 @@
     </article>
 </section>
 
+@section Scripts
+                    {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -20,7 +20,9 @@ namespace AppStore.Aplication.Services.Interfaces
         ResultActivaAccount UserActivate(string ActiveCode);
         Account Login(LoginAccountViewModel login);
         List<ListAccountViewModels> List();
-
+        ResultChangePassword ChangePassword(ChangePasswordViewModel changePassword);
+        string GetActivCode(ForgetPasswordViewModel forgetPasswordViewModel);
+        ResultResetPassword ResetPassword(ResetPasswordViewMdel resetPasswordViewMdel);
 
 
     }

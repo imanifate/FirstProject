@@ -10,7 +10,12 @@ using AppStore.Domain.ViewModels;
 
 namespace AppStore.Aplication.Services.Implements
 {
-    public class UserAccountServices (IUserAccountRepository userAccountRepository): IUserAccountServices
+    public class ProductGroupServices(IProductGroupRepository productGroupRepository): IProductGroupServices
     {
-           }
+        public List<ProductGroupViewModels>? GroupList(int take =10 , int skip=0)
+        {
+          return  productGroupRepository.GroupList(take , skip);
+          
+        }
+    }
 }

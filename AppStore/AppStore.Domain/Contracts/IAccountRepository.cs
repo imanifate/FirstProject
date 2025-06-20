@@ -17,6 +17,9 @@ namespace AppStore.Domain.Contracts
         bool UserNameDuplicate(EditAccountViewModel editAccountViewModel);
         Account GetByIsActive(string code);
          Account GetById(int id);
+        string GetByEmail(string email);
+        Account GetByActiveCode(string activeCode);
+
         void EditAccount(Account account);
         Account Login(string userNameOrEmail, string password);
         bool EmailExite(string email);

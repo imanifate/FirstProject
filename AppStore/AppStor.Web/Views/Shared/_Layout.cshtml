@@ -96,6 +96,27 @@
 
     <div class="container margin-top-25">
         <aside class="col-md-3 col-sm-4 right-side-content">
+            <section class="border-radius basket-side">
+                <header><h3>   منوی کاربری  </h3></header>
+                <article>
+                    <ul>
+                        <li>
+                            @* <img class="border-radius" src=""> *@
+                            <div class="left-basket ">
+                                <a asp-action="ChangePassword" asp-controller="Account">  تغییر رمز عبور </a>
+                            </div>
+                        </li>
+                        <li>
+                            @* <img class="border-radius" src=""> *@
+                            <div class="left-basket ">
+                                <a asp-action="CreatInfoUser" asp-controller="UserInfo" asp-area="UserPanel">ثبت اطلاعات کاربری</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="" class="show-basket-button border-radius">  خرید</a>
+                </article>
+            </section>
+
             <!-- Basket -->
             <section class="border-radius basket-side">
                 <header><h3> سبد خرید شما  </h3></header>
