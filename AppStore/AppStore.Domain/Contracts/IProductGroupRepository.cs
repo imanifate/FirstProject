@@ -11,6 +11,15 @@ namespace AppStore.Domain.Contracts
     public interface IProductGroupRepository
     {
         List<ProductGroupViewModels>? GroupList(int take = 10, int skip = 0);
+        void Creat(ProductGroup productGroup);
+        void Save();
+        bool ExistGroupTitel(string groupTitel);
+        ProductGroup GetById(int id);
+        void EditProductGroup(ProductGroup productGroup);
+        bool DoplicateGroupTitel(EditProductGroupViewModels editProductGroupViewModels);
+
+        bool Exist(int id);
+
 
     }
 }

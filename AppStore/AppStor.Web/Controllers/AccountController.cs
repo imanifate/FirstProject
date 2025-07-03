@@ -28,25 +28,25 @@ namespace AppStore.Web.Controllers
         {
             if(!ModelState.IsValid) return View(nameof(Register));
             creatAccountViewModel.ActiveCode = CodeGenerators.ActiveCode();
-            ResultCreat result=accountServices.Register(creatAccountViewModel);
+            ResultCreatAccount result=accountServices.Register(creatAccountViewModel);
             switch (result)
             {
-                case ResultCreat.Success:
+                case ResultCreatAccount.Success:
                     {
                         MessageSender.Email(creatAccountViewModel.Email, "فعال سازی  فروشگاه ساز", $"به فروشگاه ما  خوش آمدید " +
                             $"{Environment.NewLine} کد فعال سازی: {creatAccountViewModel.ActiveCode}");
                         AlertMessage("کد فعال سازی به ایمیل شما ارسال شد", TitleAlert.موفق, IConeAlert.success);
                         return RedirectToAction(nameof(Active));
                     }
-                case ResultCreat.EmailDuplicated:
+                case ResultCreatAccount.EmailDuplicated:
                     AlertMessage("ایمیل وارد شده تکراری است", TitleAlert.خطا, IConeAlert.error);
 
                     break;
-                case ResultCreat.UsreNameDuplicated:
+                case ResultCreatAccount.UsreNameDuplicated:
                     AlertMessage("نام کاربری وارد شده تکراری است", TitleAlert.خطا, IConeAlert.error);
 
                     break;
-                case ResultCreat.Error:
+                case ResultCreatAccount.Error:
                     AlertMessage("ثبت نام با خطا مواجه شد", TitleAlert.هشدار, IConeAlert.warning);
 
                     break;
@@ -79,38 +79,47 @@ namespace AppStore.Web.Controllers
             return View(active);
         }
 
-        [HttpGet ("Login")]
+        [HttpGet("Login")]
         public IActionResult Login()
-        { 
+        {
             return View();
         }
 
         [HttpPost("Login")]
-        public IActionResult Login(LoginAccountViewModel login)
+        public async Task<IActionResult> Login(LoginAccountViewModel login)
         {
-            if (!ModelState.IsValid) return View(nameof(Register));
+            if (!ModelState.IsValid)
+                return View(login);  
+
             Account account = accountServices.Login(login);
             if (account == null)
             {
                 AlertMessage("نام کاربری یا رمز عبور اشتباه است", TitleAlert.خطا, IConeAlert.error);
                 return View(login);
             }
+
             List<Claim> claims = new()
-        {
-            new Claim(ClaimTypes.Email, account.Email),
-            new Claim(ClaimTypes.Name, account.UserName),
-            new Claim(ClaimTypes.NameIdentifier, account.Id.ToString()),
-            new Claim("IsAdmin", account.IsAdmin.ToString())
-        };
+    {
+        new Claim(ClaimTypes.Email, account.Email),
+        new Claim(ClaimTypes.Name, account.UserName),
+        new Claim(ClaimTypes.NameIdentifier, account.Id.ToString()),
+        new Claim("IsAdmin", account.IsAdmin.ToString())
+    };
 
             ClaimsIdentity claimsIdentity = new(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             ClaimsPrincipal claimsPrincipal = new(claimsIdentity);
-            AuthenticationProperties properties = new() { IsPersistent = login.RemmberMe };
-            HttpContext.SignInAsync(claimsPrincipal, properties);
-            if (account.IsAdmin) return Redirect("/admin");
-            return RedirectToAction("Index", "Home");
 
-            return View();
+            AuthenticationProperties properties = new()
+            {
+                IsPersistent = login.RememberMe  
+            };
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal, properties);
+
+            if (account.IsAdmin)
+                return Redirect("/admin");
+
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet("Logout")]

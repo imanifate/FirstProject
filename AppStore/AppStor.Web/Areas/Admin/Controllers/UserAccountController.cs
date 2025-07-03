@@ -27,13 +27,13 @@ namespace AppStor.Web.Areas.Admin.Controllers
         public IActionResult Creat(CreatAccountViewModel creatAccountByAdminViewModel)
         {
             if(!ModelState.IsValid) return View(creatAccountByAdminViewModel);
-         ResultCreat result = accountServices.Creat(creatAccountByAdminViewModel);
+         ResultCreatAccount result = accountServices.Creat(creatAccountByAdminViewModel);
             switch (result)
             {
-                case ResultCreat.Success: ModelState.AddModelError("Success", "ثبت نام با موفقیت انجام شد"); return RedirectToAction(nameof(List));
-                case ResultCreat.UsreNameDuplicated: ModelState.AddModelError("Error", "نام کاربری وارد شده تکراری است"); break;
-                case ResultCreat.EmailDuplicated: ModelState.AddModelError("Error", "ایمیل وارد شده تکراری است"); break;
-                case ResultCreat.Error: ModelState.AddModelError("Error", "ثبت نام با خطا مواجه شد"); break;
+                case ResultCreatAccount.Success: ModelState.AddModelError("Success", "ثبت نام با موفقیت انجام شد"); return RedirectToAction(nameof(List));
+                case ResultCreatAccount.UsreNameDuplicated: ModelState.AddModelError("Error", "نام کاربری وارد شده تکراری است"); break;
+                case ResultCreatAccount.EmailDuplicated: ModelState.AddModelError("Error", "ایمیل وارد شده تکراری است"); break;
+                case ResultCreatAccount.Error: ModelState.AddModelError("Error", "ثبت نام با خطا مواجه شد"); break;
                 default: ModelState.AddModelError("Error", "ثبت نام با خطا مواجه شد"); break;
             }
             return View();
@@ -50,13 +50,13 @@ namespace AppStor.Web.Areas.Admin.Controllers
         public IActionResult Edit(EditAccountViewModel editAccountViewModel)
         {
             if(!ModelState.IsValid) return View(editAccountViewModel);
-            ResultEdit result = accountServices.Edit(editAccountViewModel);
+            ResultEditAccount result = accountServices.Edit(editAccountViewModel);
             switch (result)
             {
-                case ResultEdit.Success: ModelState.AddModelError("Success", " ویرایش با موفقیت انجام شد"); return RedirectToAction(nameof(List));
-                case ResultEdit.UsreNameDuplicated: ModelState.AddModelError("Error", "نام کاربری وارد شده تکراری است"); break;
-                case ResultEdit.EmailDuplicated: ModelState.AddModelError("Error", "ایمیل وارد شده تکراری است"); break;
-                case ResultEdit.Error: ModelState.AddModelError("Error", " ویرایش با خطا مواجه شد"); break;
+                case ResultEditAccount.Success: ModelState.AddModelError("Success", " ویرایش با موفقیت انجام شد"); return RedirectToAction(nameof(List));
+                case ResultEditAccount.UsreNameDuplicated: ModelState.AddModelError("Error", "نام کاربری وارد شده تکراری است"); break;
+                case ResultEditAccount.EmailDuplicated: ModelState.AddModelError("Error", "ایمیل وارد شده تکراری است"); break;
+                case ResultEditAccount.Error: ModelState.AddModelError("Error", " ویرایش با خطا مواجه شد"); break;
                 default: ModelState.AddModelError("Error", " ویرایش با خطا مواجه شد"); break;
             }
 
@@ -66,11 +66,11 @@ namespace AppStor.Web.Areas.Admin.Controllers
         public IActionResult Delete(int id)
         {
             if (!ModelState.IsValid) return View(nameof(List));
-            ResultDelete result = accountServices.Delete(id);
+            ResultDeleteAccount result = accountServices.Delete(id);
             switch (result)
             {
-                case ResultDelete.Success: ModelState.AddModelError("Success", " حذف با موفقیت انجام شد"); return RedirectToAction(nameof(List));
-                case ResultDelete.Null: ModelState.AddModelError("Error", " کاربر مورد نظر یافت نشد"); break;
+                case ResultDeleteAccount.Success: ModelState.AddModelError("Success", " حذف با موفقیت انجام شد"); return RedirectToAction(nameof(List));
+                case ResultDeleteAccount.Null: ModelState.AddModelError("Error", " کاربر مورد نظر یافت نشد"); break;
                 default: ModelState.AddModelError("Error", " حذف با خطا مواجه شد"); break;
             }
           return View(nameof(List));

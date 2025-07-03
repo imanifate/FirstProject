@@ -1,9 +1,3 @@
-D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.csproj.AssemblyReference.cache
-D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.GeneratedMSBuildEditorConfig.editorconfig
-D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.AssemblyInfoInputs.cache
-D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.AssemblyInfo.cs
-D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.csproj.CoreCompileInputs.cache
-D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.sourcelink.json
 D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.IOC.deps.json
 D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.IOC.dll
 D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.IOC.pdb
@@ -13,6 +7,12 @@ D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.Domain.dll
 D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.Aplication.pdb
 D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.Data.pdb
 D:\asp\Project\AppStore\AppStore.IOC\bin\Debug\net9.0\AppStore.Domain.pdb
+D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.csproj.AssemblyReference.cache
+D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.AssemblyInfoInputs.cache
+D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.AssemblyInfo.cs
+D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.csproj.CoreCompileInputs.cache
+D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.sourcelink.json
 D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.EFD67D85.Up2Date
 D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\AppStore.IOC.dll
 D:\asp\Project\AppStore\AppStore.IOC\obj\Debug\net9.0\refint\AppStore.IOC.dll

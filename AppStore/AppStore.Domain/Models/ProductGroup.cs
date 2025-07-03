@@ -14,17 +14,24 @@ namespace AppStore.Domain.Models
         [Display(Name = "عنوان گروه")]
         [Required(ErrorMessage ="لطفا{0} را وارد کنید")]
         public string GroupTitel {  get; set; }
-        public List<ProductSubGroup>? ProductSubGroup { get; set; }
-        
+
+        //Navigation Property
+        //public List<ProductSubGroup> SubGroups { get; set; }
+
+        public List<ProductSubGroup>? ProductSubGroups { get; set; }
+        public List<Product> Products { get; set; }
     }
     public class ProductSubGroup:BaseEntity
     {
         [Display(Name ="عنوان زیر گروه")]
         [Required(ErrorMessage = "لطفا{0} را وارد کنید")]
+        [MaxLength(200)]
         public int GroupId { get; set; }
         public string SubGroupTitel { get; set; }
 
         [ForeignKey("GroupId")]
         public ProductGroup? ProductGroup { get; set; }
+        public List<Product> Products { get;  set; }
+
     }
 }

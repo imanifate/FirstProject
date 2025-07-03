@@ -34,12 +34,12 @@ namespace AppStore.Aplication.Services.Implements
             }).ToList();
         }
 
-        public ResultCreat Register(RegisterAccountViewModel registerAccountViewModel)
+        public ResultCreatAccount Register(RegisterAccountViewModel registerAccountViewModel)
         {
             if (registerAccountViewModel != null)
             {
-                if (accountRepository.EmailExite(registerAccountViewModel.Email)) return ResultCreat.EmailDuplicated;
-                if (accountRepository.UserNameExite(registerAccountViewModel.UserName)) return ResultCreat.UsreNameDuplicated;
+                if (accountRepository.EmailExite(registerAccountViewModel.Email)) return ResultCreatAccount.EmailDuplicated;
+                if (accountRepository.UserNameExite(registerAccountViewModel.UserName)) return ResultCreatAccount.UsreNameDuplicated;
                 accountRepository.Creat(new Account
                 {
                     UserName = registerAccountViewModel.UserName,
@@ -49,16 +49,16 @@ namespace AppStore.Aplication.Services.Implements
                     ActiveCode = registerAccountViewModel.ActiveCode
                 });
                 accountRepository.Save();
-                return ResultCreat.Success;
+                return ResultCreatAccount.Success;
             }
-            else return ResultCreat.Null;
+            else return ResultCreatAccount.Null;
         }
-        public ResultCreat Creat(CreatAccountViewModel creatAccountViewModel)
+        public ResultCreatAccount Creat(CreatAccountViewModel creatAccountViewModel)
         {
             if (creatAccountViewModel != null)
             {
-                if (accountRepository.UserNameExite(creatAccountViewModel.Email)) return ResultCreat.EmailDuplicated;
-                if (accountRepository.UserNameExite(creatAccountViewModel.UserName)) return ResultCreat.UsreNameDuplicated;
+                if (accountRepository.UserNameExite(creatAccountViewModel.Email)) return ResultCreatAccount.EmailDuplicated;
+                if (accountRepository.UserNameExite(creatAccountViewModel.UserName)) return ResultCreatAccount.UsreNameDuplicated;
                 accountRepository.Creat(new Account
                 {
                     UserName = creatAccountViewModel.UserName,
@@ -67,12 +67,13 @@ namespace AppStore.Aplication.Services.Implements
                     Rules = true,
                     ActiveCode = creatAccountViewModel.ActiveCode,
                     IsActive = creatAccountViewModel.IsActive,
-                    IsAdmin = creatAccountViewModel.IsAdmin,
+                    IsAdmin = creatAccountViewModel.IsAdmin
+                    
                 });
                 accountRepository.Save();
-                return ResultCreat.Success;
+                return ResultCreatAccount.Success;
             }
-            else return ResultCreat.Null;
+            else return ResultCreatAccount.Null;
         }
 
 
@@ -92,12 +93,12 @@ namespace AppStore.Aplication.Services.Implements
 
         }
 
-        public ResultEdit Edit(EditAccountViewModel editAccountViewModel)
+        public ResultEditAccount Edit(EditAccountViewModel editAccountViewModel)
         {
             Account account = accountRepository.GetById(editAccountViewModel.AccountId);
-            if (account == null) return ResultEdit.Null;
-            if (accountRepository.EmailDuplicate(editAccountViewModel)) return ResultEdit.EmailDuplicated;
-            if (accountRepository.UserNameDuplicate(editAccountViewModel)) return ResultEdit.UsreNameDuplicated;
+            if (account == null) return ResultEditAccount.Null;
+            if (accountRepository.EmailDuplicate(editAccountViewModel)) return ResultEditAccount.EmailDuplicated;
+            if (accountRepository.UserNameDuplicate(editAccountViewModel)) return ResultEditAccount.UsreNameDuplicated;
             account.UserName = editAccountViewModel.UserName;
             account.Email = editAccountViewModel.Email;
             account.IsActive = editAccountViewModel.IsActive;
@@ -106,17 +107,17 @@ namespace AppStore.Aplication.Services.Implements
             account.ModifiedDate = editAccountViewModel.ModifiedDate;
             accountRepository.EditAccount(account);
             accountRepository.Save();
-            return ResultEdit.Success;
+            return ResultEditAccount.Success;
         }
 
-        public ResultDelete Delete(int accountId)
+        public ResultDeleteAccount Delete(int accountId)
         {
             Account account = accountRepository.GetById(accountId);
-            if (account == null) return ResultDelete.Null;
+            if (account == null) return ResultDeleteAccount.Null;
             account.IsDelete = true;
             accountRepository.EditAccount(account);
             accountRepository.Save();
-            return ResultDelete.Success;
+            return ResultDeleteAccount.Success;
         }
 
 

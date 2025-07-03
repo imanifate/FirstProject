@@ -1,6 +1,7 @@
 D:\asp\Project\AppStore\AppStore.Domain\bin\Debug\net9.0\AppStore.Domain.deps.json
 D:\asp\Project\AppStore\AppStore.Domain\bin\Debug\net9.0\AppStore.Domain.dll
 D:\asp\Project\AppStore\AppStore.Domain\bin\Debug\net9.0\AppStore.Domain.pdb
+D:\asp\Project\AppStore\AppStore.Domain\obj\Debug\net9.0\AppStore.Domain.csproj.AssemblyReference.cache
 D:\asp\Project\AppStore\AppStore.Domain\obj\Debug\net9.0\AppStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\asp\Project\AppStore\AppStore.Domain\obj\Debug\net9.0\AppStore.Domain.AssemblyInfoInputs.cache
 D:\asp\Project\AppStore\AppStore.Domain\obj\Debug\net9.0\AppStore.Domain.AssemblyInfo.cs

@@ -5,18 +5,33 @@
     {
         public async Task InvokeAsync(HttpContext httpContext)
         {
-            string path = httpContext.Request.Path.ToString().ToLower().Trim();
-            if (path.StartsWith("/admin"))
+           
+            //string path = httpContext.Request.Path.ToString().ToLower().Trim();
+            string path = (httpContext.Request.PathBase + httpContext.Request.Path).ToString().ToLower().Trim();
+            
+            if (path.Contains("/admin"))
             {
                 string result = httpContext.User.FindFirst("IsAdmin")?.Value ?? "";
-                if (string.IsNullOrEmpty(result) || bool.Parse(result) == false)
-                    httpContext.Response.Redirect("/Home/AccessDenied");
+                if (!bool.TryParse(result, out bool isAdmin) || !isAdmin)
+                   // httpContext.Response.Redirect("/Home/AccessDenied");
+                httpContext.Response.Redirect(location: "/home/AccessDenied");
+                else
+                {
+                    await next(httpContext);
+                }
+
             }
-            await next(httpContext);
-
-
-
+            else
+            {
+                await next(httpContext);
+            }
 
         }
+            
+
+
+
+
+        
     }
 }

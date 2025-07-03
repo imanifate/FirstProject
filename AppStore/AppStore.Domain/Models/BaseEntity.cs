@@ -19,6 +19,6 @@ namespace AppStore.Domain.Models
         public DateTime? ModifiedDate { get; set; }
 
         [Display(Name = "حذف")]
-        bool IsDeleted { get; set; }=false;
+        public  bool IsDeleted { get; set; }=false;
     }
 }

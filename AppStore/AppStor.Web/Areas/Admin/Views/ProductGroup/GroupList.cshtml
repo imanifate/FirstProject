@@ -1,0 +1,75 @@
+﻿@using AppStore.Domain.ViewModels
+@model List<ProductGroupViewModels>
+
+@{
+    ViewData["Title"] = "لیست گروها";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-left">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" asp-area="Admin">خانه</a></li>
+                    <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-start">
+            <a asp-action="CreatGroup" asp-controller="ProductGroup" asp-area="Admin" class="btn btn-primary d-inline-flex align-items-center">
+                <i class="fa fa-plus"></i><span class="mr-2">افزودن گروه جدید</span>
+            </a>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</section>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0">
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>عنوان گروه</th>
+                            <th>تاریخ ایجاد گروه</th>
+                            <th>تاریخ ویرایش گروه</th>
+                            <th>حذف</th>
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            var rowClass = item.IsDelete ? "table-danger"  : "";
+                            <tr class="@rowClass">
+                                <td>@Model.IndexOf(item)</td>
+                                <td>@item.GroupTitel</td>
+                                <td>@item.CreatDate</td>
+                                <td>@item.ModifiedDate</td>
+                                <td>@item.IsDelete</td>
+                                <td>
+                                    <a asp-action="EditGroup" asp-route-Id="@item.GroupId" class="btn btn-warning d-inline-flex align-items-center">
+                                        <i class="fa fa-edit"></i><span class="mr-2">ویرایش</span>
+                                    </a>
+                                    <a asp-action="DeleteGroup" asp-route-Id="@item.GroupId" class="btn btn-danger d-inline-flex align-items-center">
+                                        <i class="fa fa-trash"></i><span class="mr-2">حذف</span>
+                                    </a>
+                                    <a asp-action="SubGroupList" asp-controller="ProductSubGroup" asp-route-Id="@item.GroupId" class="btn btn-danger d-inline-flex align-items-center">
+                                         <i class="fa fa-folder-open"></i><span class="mr-2"> زیرگروه</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>

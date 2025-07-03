@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppStore.Domain.Enums
 {
-    public enum ResultDelete
+    public enum ResultCreatAccount
     {
         Success,UsreNameDuplicated,EmailDuplicated,Error,Null
     }

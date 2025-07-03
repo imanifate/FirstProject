@@ -207,6 +207,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.NETCore.Platforms": {
               "target": "Package",
               "version": "[7.0.4, )"

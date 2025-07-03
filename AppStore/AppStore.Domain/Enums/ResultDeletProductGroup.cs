@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AppStore.Domain.Enums
 {
-    public enum ResultEdit
+    public enum ResultDeletProductGroup
     {
-        Success,UsreNameDuplicated,EmailDuplicated,Error,Null
+        Success,Error,Null
     }
 }

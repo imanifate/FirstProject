@@ -24,7 +24,7 @@ namespace AppStore.Domain.ViewModels
         public string Password { get; set; }
 
 
-        public bool RemmberMe { get; set; }
+        public bool RememberMe { get; set; }
 
     }
 }

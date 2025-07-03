@@ -3677,6 +3677,62 @@
       "PackagePath": "staticwebassets\\Admin\\plugins\\timepicker\\bootstrap-timepicker.min.js"
     },
     {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\07d715aa-e29a-41ce-8178-2849f969151a.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\07d715aa-e29a-41ce-8178-2849f969151a.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\3e9ebd74-5251-4c08-ba01-db76688ed257.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\3e9ebd74-5251-4c08-ba01-db76688ed257.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\4221f5d0-3999-4367-b87a-4cbf91403054.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\4221f5d0-3999-4367-b87a-4cbf91403054.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\4b8b3e53-f5ac-4632-a395-457bbc8a4b66.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\4b8b3e53-f5ac-4632-a395-457bbc8a4b66.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\55460ba1-698d-4214-bfef-a831e8116ac6.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\55460ba1-698d-4214-bfef-a831e8116ac6.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\65da4ea1-ef83-4168-b287-44060da379b5.webp",
+      "PackagePath": "staticwebassets\\ProductImages\\65da4ea1-ef83-4168-b287-44060da379b5.webp"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\771820ce-25b3-4d1b-a1f4-f5ceb75d2b4b.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\771820ce-25b3-4d1b-a1f4-f5ceb75d2b4b.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\a5551a00-ee8e-4144-a305-20cd4e17c95d.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\a5551a00-ee8e-4144-a305-20cd4e17c95d.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\aa3ca967-0551-4753-a4ee-413e04335f10.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\aa3ca967-0551-4753-a4ee-413e04335f10.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\f09ba104-7437-46fd-b86f-5e311fa795a8.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\f09ba104-7437-46fd-b86f-5e311fa795a8.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\f70772c7-5bd9-449a-b505-a8e8f62e4ec7.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\f70772c7-5bd9-449a-b505-a8e8f62e4ec7.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\f864bbc7-14dc-4fee-bb13-b99845c9eae5.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\f864bbc7-14dc-4fee-bb13-b99845c9eae5.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\fdee152e-3f0f-45bd-aba4-51cc9ee2fc6b.webp",
+      "PackagePath": "staticwebassets\\ProductImages\\fdee152e-3f0f-45bd-aba4-51cc9ee2fc6b.webp"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\noimage.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\noimage.jpg"
+    },
+    {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\css\\bootstrap-rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-rtl.min.css"
     },
@@ -3771,6 +3827,10 @@
     {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\img\\2.jpg",
       "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\img\\403.jpeg",
+      "PackagePath": "staticwebassets\\img\\403.jpeg"
     },
     {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\img\\avatar.jpg",

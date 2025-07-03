@@ -32,8 +32,32 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductGroup/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEdyb3VwXEluZGV4LmNzaHRtbA==
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductGroup/CreatGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEdyb3VwXENyZWF0R3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductGroup/EditGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEdyb3VwXEVkaXRHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductGroup/GroupList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEdyb3VwXEdyb3VwTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductSubGroup/SubGroupCreat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFN1Ykdyb3VwXFN1Ykdyb3VwQ3JlYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/ProductSubGroup/SubGroupList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFN1Ykdyb3VwXFN1Ykdyb3VwTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/Product/Creat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/Product/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/asp/Project/AppStore/AppStor.Web/Areas/Admin/Views/UserAccount/Creat.cshtml]
