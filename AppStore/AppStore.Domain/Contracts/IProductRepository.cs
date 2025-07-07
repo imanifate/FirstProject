@@ -16,10 +16,11 @@ namespace AppStore.Domain.Contracts
         void Save();
         Product? GetById(int Id);
         void Edit(Product Product);
-         
-        List<ProductViewModels>? GetAll(int tak=10 ,int skip=0);
-        List<ProductViewModels> GetByGroupId(int groupId);
-        List<ProductViewModels> GetBySubGroupId(int SubgroupId);
-        
+
+        ProductListViewModels? ProductList(int SubGroupId);
+       ProductSubGroup GetForSubGroupById(int id);
+
+
+
     }
 }

@@ -11,25 +11,19 @@ namespace AppStor.Web.Areas.Admin.Controllers
     public class ProductSubGroupController(IProductSubGroupServices productSubGroupServices) : Controller
     {
 
-        [HttpGet("SubGroupProduct")]
+        [HttpGet("subGroupList")]
         public IActionResult SubGroupList(int id)
         {
 
             var productSubGroupListViewModels = productSubGroupServices.List(id);
             if(productSubGroupListViewModels==null)
                 return NotFound();
-
-
-            //    new ProductSubGroupListViewModels
-            //{
-            //    GroupId = id,
-            //    SubGroups = productSubGroupServices.List(id)
-            //};
+           
             return View(productSubGroupListViewModels);
         }
 
-        [HttpGet("subGroupCreat")]
-        public IActionResult SubGroupCreat(int id)
+        [HttpGet("CreatSubGroup")]
+        public IActionResult CreatSubGroup(int id)
         {
             CreatProductSubGroupViewModels creatProductSubGroupViewModels =  productSubGroupServices.GetForGropById(id);
             
@@ -37,8 +31,8 @@ namespace AppStor.Web.Areas.Admin.Controllers
             return View(creatProductSubGroupViewModels);
         }
 
-        [HttpPost("subGroupCreat")]
-        public IActionResult SubGroupCreat(CreatProductSubGroupViewModels creatProductSubGroupViewModels)
+        [HttpPost("CreatSubGroup")]
+        public IActionResult CreatSubGroup(CreatProductSubGroupViewModels creatProductSubGroupViewModels)
         {
             if(!ModelState.IsValid) return View(creatProductSubGroupViewModels);
           ResultCreatProductSubGroup result = productSubGroupServices.Creat(creatProductSubGroupViewModels);

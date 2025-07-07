@@ -24,34 +24,35 @@ namespace AppStore.Domain.Contracts
 
         }
 
-        public List<ProductViewModels>? GetAll(int take = 10, int skip = 0)
+        public ProductListViewModels? ProductList(int SubGroupId)
         {
-            return appStore_BD_Contetxt.Products
-                .Include(p => p.ProductGroup)
-                .Include(p => p.ProductSubGroup)
-                .Select(x => new ProductViewModels()
-            {
-               Id = x.Id,
-               Titel = x.Titel,
-               ShortDescription = x.ShortDescription,
-               Description = x.Description,
-               Price = x.Price,
-               ImageName = x.ImageName,
-               tag = x.tag,
-               Visit = x.Visit,
-               CreatDate = x.CreatDate,
-               ModifiedDate = x.ModifiedDate,
-               Group =  x.ProductGroup,
-               SubGroup = x.ProductSubGroup
-            })
-                .Take(take)
-                .Skip(skip)
-                .ToList();
-        }
+            ProductSubGroup? productSubGroup = appStore_BD_Contetxt.ProductSubGroups
+                .FirstOrDefault(sg => sg.Id == SubGroupId);
+            if(productSubGroup == null)
+                return null;
 
-        public List<ProductViewModels> GetByGroupId(int groupId)
-        {
-            throw new NotImplementedException();
+            List<ProductViewModels> products = appStore_BD_Contetxt.Products
+                .Where(p => p.SubGroupId == SubGroupId)
+                .Select(p => new ProductViewModels()
+                {
+                   
+                    Titel = p.Titel,
+                    ShortDescription = p.ShortDescription,
+                    Description = p.Description,
+                    Price = p.Price,
+                    ImageName = p.ImageName,
+                    tag = p.tag,
+                    Visit = p.Visit,
+                    CreatDate = p.CreatDate,
+                    ModifiedDate = p.ModifiedDate,
+                   }).ToList();
+
+            return new ProductListViewModels()
+            {
+                SubGroupId = productSubGroup.Id,
+                SubGroupTitel = productSubGroup.SubGroupTitel,
+                Products = products
+            };
         }
 
         public Product? GetById(int id)
@@ -59,15 +60,19 @@ namespace AppStore.Domain.Contracts
             return appStore_BD_Contetxt.Products.FirstOrDefault(p => p.Id == id);
         }
 
-        public List<ProductViewModels> GetBySubGroupId(int SubgroupId)
-        {
-            throw new NotImplementedException();
-        }
-
-        
         public void Save()
         {
             appStore_BD_Contetxt.SaveChanges();
         }
+
+        public ProductSubGroup GetForSubGroupById(int id)
+        {
+          return  appStore_BD_Contetxt.ProductSubGroups
+                .Where(p => p.Id == id)
+                .FirstOrDefault();
+
+        }
+
+        
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppStor.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a9fd594959b705aa0fd0d899de857bb7e081423")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df348a52a18352bb4cee4b4db1727ae6505939fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppStor.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppStor.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

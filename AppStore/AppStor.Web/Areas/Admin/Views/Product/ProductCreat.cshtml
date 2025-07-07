@@ -1,0 +1,93 @@
+﻿@using AppStore.Domain.ViewModels
+@model CreatProductViewModel
+@{
+    ViewData["Title"] = "افزودن محصول";
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-left">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" asp-area="Admin">خانه</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="Product" asp-action="ProductList" asp-area="Admin">لیست محصولات</a></li>
+                    <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                </ol>
+            </div>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</section>
+
+
+<form asp-action="ProductCreat" asp-controller="Product" asp-area="Admin" enctype="multipart/form-data" method="post" role="form">
+
+   <div class="card-body">
+        <input asp-for="SubGroupId" type="hidden" class="form-control">
+        <input asp-for="GroupId" type="hidden" class="form-control">
+
+        <div class="form-group">
+            <label asp-for="SubGroupTitel" for="exampleInput">عنوان زیرگروه</label>
+            <input asp-for="SubGroupTitel"  class="form-control" readonly>
+        </div>
+        <div class="form-group">
+            <label asp-for="ProductTitel" for="exampleInput">عنوان محصول</label>
+            <input asp-for="ProductTitel" type="text" class="form-control" placeholder="عنوان محصول">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Price" for="exampleInput">قیمت</label>
+            <input asp-for="Price" type="text" class="form-control"  placeholder="قیمت را وارد کنید">
+        </div>
+        <div class="form-group">
+            <label asp-for="ShortDescription" for="exampleInput"> خلاصه توضیحات</label>
+            <input asp-for="ShortDescription" type="text" class="form-control" placeholder="خلاصه توضیحات">
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" for="exampleInput"> توضیحات</label>
+            <input asp-for="Description" type="text" class="form-control" placeholder="توضیحات  را وارد کنید">
+        </div>
+        <div class="form-group">
+            <label asp-for="Image" for="exampleInput"> عکس</label>
+            <input asp-for="Image" type="file" class="form-control" >
+        </div>
+        <div class="form-group">
+            <label asp-for="tag" for="exampleInput"> </label>
+            <input asp-for="tag" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="Visit" for="exampleInput"> بازدید</label>
+            <input asp-for="Visit" type="text" class="form-control" >
+        </div>
+   </div>
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary">ارسال</button>
+    </div>
+</form>
+
+   @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'Description' );
+    </script>
+    <script>
+        function ImgPre(input) {
+          if (input.files[0]) {
+            var uploadimg = new FileReader();
+            uploadimg.onload = function(displayimg) {
+              $("#ImgPreview").attr('src', displayimg.target.result);
+            }
+            uploadimg.readAsDataURL(input.files[0]);
+          }
+        }
+
+        function loadSubGroup()
+        {
+            $("#subs").load("/Admin/Products/GetSubGroup?groupId="+$("#GroupId").val());
+        }
+    </script>
+}

@@ -17,6 +17,7 @@ namespace AppStore.Aplication.Services.Implements
         {
             return productSubGroupRepository.List(id);           
         }
+
         public ResultCreatProductSubGroup Creat(CreatProductSubGroupViewModels creatProductSubGroupViewModels)
         {
             if (productSubGroupRepository.ExistSubGroupTitel(creatProductSubGroupViewModels.SubGroupTitel , creatProductSubGroupViewModels.GroupId)) 

@@ -11020,13 +11020,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AppStor.Web.i1nvmi7qy2.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-misAD1v\u002BcnKD0Jdo7HB792Yja5\u002BONr6NQ\u002BQi2Hzinc0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2275"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022misAD1v\u002BcnKD0Jdo7HB792Yja5\u002BONr6NQ\u002BQi2Hzinc0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Jul 2025 15:47:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2275"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022misAD1v\u002BcnKD0Jdo7HB792Yja5\u002BONr6NQ\u002BQi2Hzinc0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Jul 2025 11:27:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppStor.Web/AppStor.Web.i1nvmi7qy2.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AppStor.Web.i1nvmi7qy2.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i1nvmi7qy2"},{"Name":"integrity","Value":"sha256-misAD1v\u002BcnKD0Jdo7HB792Yja5\u002BONr6NQ\u002BQi2Hzinc0="},{"Name":"label","Value":"_content/AppStor.Web/AppStor.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2275"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022misAD1v\u002BcnKD0Jdo7HB792Yja5\u002BONr6NQ\u002BQi2Hzinc0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Jul 2025 15:47:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2275"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022misAD1v\u002BcnKD0Jdo7HB792Yja5\u002BONr6NQ\u002BQi2Hzinc0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Jul 2025 11:27:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppStor.Web/css/bootstrap-rtl.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap-rtl.min.css'))</AssetFile>

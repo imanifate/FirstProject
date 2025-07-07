@@ -8,45 +8,60 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AppStor.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class ProductController
         (IProductServices productServices) : Controller
     {
-        [Area("Admin")]
-        [HttpGet("ProductList")]
-        public IActionResult ProductList()
+        
+        [HttpGet("productList")]
+        public IActionResult ProductList(int id)
         {
-           List<ProductViewModels> productViewModels = productServices.GetAll(int.MaxValue);
+           var productListViewModels = productServices.ProductList(id);
+            if (productListViewModels == null)
+                return NotFound();
 
-            return View(productViewModels);
+            return View(productListViewModels);
         }
 
        
 
         [HttpGet("ProductDetails")]
-        public IActionResult Detail(int id)
+        public IActionResult ProductDetails(int id)
         {
          ProductViewModels productViewModels = productServices.GetDetailsById(id);
             return View(productViewModels);
         }
 
-        [HttpGet("CreatProduct")]
-        public IActionResult Creat()
+        [HttpGet("productCreat")]
+        public IActionResult ProductCreat(int id)
         {
-            return View();
+           CreatProductViewModel creatProductViewModel =  productServices.GetSubGroupById(id);
+            if (creatProductViewModel == null) return NotFound();
+            return View(creatProductViewModel);
         }
 
-        [HttpPost("CreatProduct")]
-        public IActionResult Creat(CreatProductViewModel creatProductViewModel)
+        [HttpPost("productCreat")]
+        public IActionResult ProductCreat(CreatProductViewModel creatProductViewModel)
         {
             if(!ModelState.IsValid)  return View(creatProductViewModel);
 
             ResultCreatProduct result = productServices.Create(creatProductViewModel);
             switch (result)
             {
-                case ResultCreatProduct.Success: ModelState.AddModelError("Success", "ثبت محصول با موفقیت انجام شد"); return RedirectToAction(nameof(ProductList));
-                case ResultCreatProduct.GroupNotFound: ModelState.AddModelError("Error", "گروه محصول یافت نشد"); break;
-                case ResultCreatProduct.SubGroupNotFound: ModelState.AddModelError("Error", "زیر گروه محصول یافت نشد"); break;
-                default: ModelState.AddModelError("Error", "ثبت محصول با خطا مواجه شد"); break;
+                case ResultCreatProduct.Success: 
+                    ModelState.AddModelError("Success", "ثبت محصول با موفقیت انجام شد");
+                    return RedirectToAction(nameof(ProductList) , new {id = creatProductViewModel.SubGroupId});
+
+                case ResultCreatProduct.GroupNotFound:
+                    ModelState.AddModelError("Error", "گروه محصول یافت نشد");
+                    break;
+
+                case ResultCreatProduct.SubGroupNotFound:
+                    ModelState.AddModelError("Error", "زیر گروه محصول یافت نشد"); 
+                    break;
+
+                default: ModelState.AddModelError("Error", "ثبت محصول با خطا مواجه شد");
+                    break;
             }
 
             return View(creatProductViewModel);

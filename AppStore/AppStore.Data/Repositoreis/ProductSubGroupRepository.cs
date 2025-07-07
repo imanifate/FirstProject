@@ -20,12 +20,12 @@ namespace AppStore.Data.Repositoreis
             if(productGroup==null)
                 return null;
 
-            var SubGroups = appStore_DB_Context.ProductSubGroups
+            List<ProductSubGroupViewModels> SubGroups = appStore_DB_Context.ProductSubGroups
               .Where(c => c.GroupId == id)
               .Select(c => new ProductSubGroupViewModels()
               {
 
-                  Id = c.Id,
+                  SubGroupId = c.Id,
                   SubGroupTitel = c.SubGroupTitel,
                   CreatDate = c.CreatDate,
                   ModifiedDate = c.ModifiedDate,
@@ -74,7 +74,7 @@ namespace AppStore.Data.Repositoreis
         }
         public bool Exist(int id)
         {
-            return appStore_DB_Context.ProductGroups.Any(i => i.Id == id);
+            return appStore_DB_Context.ProductSubGroups.Any(i => i.Id == id);
         }
 
         //public ProductSubGroup GetById(int id)

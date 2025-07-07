@@ -16,8 +16,10 @@ namespace AppStore.Domain.ViewModels
         [Display(Name = "عنوان کالا")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(400)]
-        public string Titel { get; set; }
+        public string ProductTitel { get; set; }
+        public string SubGroupTitel { get; set; }
         public int GroupId { get; set; }
+
         public int SubGroupId { get; set; }
 
         [Display(Name = "توضیح مختصر")]
@@ -34,7 +36,7 @@ namespace AppStore.Domain.ViewModels
         public int Price { get; set; }
 
         [Display(Name = "تصویر")]
-        public IFormFile Image { get; set; }
+        public IFormFile? Image { get; set; }
 
         [Display(Name = "تگ")]
         public string tag { get; set; }
@@ -43,7 +45,7 @@ namespace AppStore.Domain.ViewModels
         public string Visit { get; set; }
 
         [Display(Name = "گالری تصاویر")]
-        public List<IFormFile> ImgGalleries { get; set; }
+        public List<IFormFile>? ImgGalleries { get; set; }
 
     }
 }

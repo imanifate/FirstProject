@@ -10,12 +10,10 @@ namespace AppStore.Domain.ViewModels
 {
     public class ProductViewModels
     {
-        public int Id { get; set; }
-
+        public int ProductId { get; set; }
+      
         public string Titel { get; set; }
-        public ProductGroup? Group { get; set; }
-        public ProductSubGroup? SubGroup { get; set; }
-    
+       
         public string ShortDescription { get; set; }
     
         public string Description { get; set; }

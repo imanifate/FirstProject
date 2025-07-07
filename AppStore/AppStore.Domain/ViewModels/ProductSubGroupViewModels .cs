@@ -10,7 +10,7 @@ namespace AppStore.Domain.ViewModels
     public class ProductSubGroupViewModels
     {
 
-        public int Id { get; set; }
+        public int SubGroupId { get; set; }
        
         public string SubGroupTitel { get; set; }
         public int? ProductCount { get; set; }

@@ -16,28 +16,36 @@ namespace AppStore.Domain.Models
         public string Titel {  get; set; }
         public int GroupId { get; set; }
         public int SubGroupId { get; set; }
+
         [Display(Name = "توضیح مختصر")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [MaxLength(400)]
         public string ShortDescription { get; set; }
+
         [Display(Name = "متن کامل")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public string Description { get; set; }
 
-        [Display(Name = "متن کامل")]
+        [Display(Name = "قیمت")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public int Price { get; set; }
+
         [Display(Name = "تصویر")]
         public string? ImageName { get; set; }
+
         [Display(Name = "تگ")]
         public string tag {  get; set; }
+
         [Display(Name = "بازدید")]
         public string Visit {  get; set; }
-        public List<ProductGallery> ProductGalleries { get; set; }
-        [ForeignKey("ProductGroupId")]
+        public List<ProductGallery>? ProductGalleries { get; set; }
+
+        [ForeignKey("GroupId")]
         public ProductGroup ProductGroup { get; set; }
-        [ForeignKey("ProductSubGroupId")]
+
+        [ForeignKey("SubGroupId")]
         public ProductSubGroup ProductSubGroup { get; set; }
+
         public List<OrderDetail>? OrderDetails { get; set; }
 
     }

@@ -15,21 +15,35 @@ namespace AppStore.Aplication.Services.Implements
     public class ProductServices 
         (IProductRepository productRepository
         ,IProductGalleryRepository productGalleryRepository
-        ,IProductGroupRepository productGroupRepository)
+        ,IProductGroupRepository productGroupRepository
+        ,IProductSubGroupRepository productSubGroupRepository)
         : IProductServices
     {
-        public List<ProductViewModels>? GetAll(int take = 10, int skip = 0)
+        public ProductListViewModels? ProductList(int SubGroupId)
         {
-            return productRepository.GetAll(take, skip);
+            return productRepository.ProductList(SubGroupId);
         }
 
+        public CreatProductViewModel GetSubGroupById(int id)
+        {
+           ProductSubGroup productSubGroup = productRepository.GetForSubGroupById(id);
+
+            if (productSubGroup == null) return null;
+            return new CreatProductViewModel()
+            {
+                GroupId = productSubGroup.GroupId,
+                SubGroupId = id,
+                SubGroupTitel = productSubGroup.SubGroupTitel
+            };
+
+        }
         public ProductViewModels? GetDetailsById(int id)
         {
             Product product = productRepository.GetById(id);
             if (product == null) return null;
             return new ProductViewModels()
             {
-                Id = product.Id,
+                ProductId = id,
                 Titel = product.Titel,
                 ShortDescription = product.ShortDescription,
                 Description = product.Description,
@@ -39,24 +53,20 @@ namespace AppStore.Aplication.Services.Implements
                 Visit = product.Visit,
                 CreatDate = product.CreatDate,
                 ModifiedDate = product.ModifiedDate,
-                Group = product.ProductGroup,
-                SubGroup = product.ProductSubGroup
-            };
+                            };
         }
 
        public ResultCreatProduct Create(CreatProductViewModel creatProductViewModel)
        {
-            if (productGroupRepository.Exist(creatProductViewModel.GroupId))
+            
+            if (!productSubGroupRepository.Exist(creatProductViewModel.SubGroupId))
                 return ResultCreatProduct.GroupNotFound;
-
-            //if (productSubGroupRepository.Exist(creatProductViewModel.GroupId))
-            //    return ResultCreatProduct.GroupNotFound;
 
 
             Product product = new Product
             {
                 
-                Titel = creatProductViewModel.Titel,
+                Titel = creatProductViewModel.ProductTitel,
                 ShortDescription = creatProductViewModel.ShortDescription,
                 Description = creatProductViewModel.Description,
                 Price = creatProductViewModel.Price,
@@ -65,8 +75,8 @@ namespace AppStore.Aplication.Services.Implements
                 Visit = creatProductViewModel.Visit,
                 ModifiedDate = null,
                 IsDeleted = false,
-                GroupId = creatProductViewModel.GroupId,
-                SubGroupId = creatProductViewModel.SubGroupId
+                SubGroupId = creatProductViewModel.SubGroupId,
+                GroupId = creatProductViewModel.GroupId
             };
             if (creatProductViewModel.Image != null)
             {

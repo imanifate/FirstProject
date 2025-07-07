@@ -11,9 +11,12 @@ namespace AppStore.Aplication.Services.Interfaces
 {
     public interface IProductServices
     {
-        List<ProductViewModels>? GetAll(int take=10 , int skip=0);
+        ProductListViewModels? ProductList(int SubGroupId);
         ProductViewModels? GetDetailsById(int id);
         ResultCreatProduct Create(CreatProductViewModel creatProductViewModel);
- 
+        CreatProductViewModel GetSubGroupById(int id);
+
+
+
     }
 }

@@ -1,5 +1,5 @@
 ﻿@using AppStore.Domain.ViewModels
-@model List<ProductViewModels>
+@model ProductListViewModels
 
 @{
     ViewData["Title"] = "لیست محصولات";
@@ -15,12 +15,13 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-left">
                     <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" asp-area="Admin">خانه</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="ProductSubGoup" asp-action="SubGroupList" asp-area="Admin">لیست زیر گروه</a></li>
                     <li class="breadcrumb-item active">@ViewData["Title"]</li>
                 </ol>
             </div>
         </div>
         <div class="row d-flex justify-content-start">
-            <a asp-action="Creat" asp-controller="Product" asp-area="Admin" class="btn btn-primary d-inline-flex align-items-center">
+            <a asp-action="ProductCreat" asp-controller="Product" asp-area="Admin" asp-route-id="@Model.SubGroupId" class="btn btn-primary d-inline-flex align-items-center">
                 <i class="fa fa-plus"></i><span class="mr-2">افزودن محصول جدید</span>
             </a>
         </div>
@@ -38,20 +39,20 @@
                     <tbody>
                         <tr>
                             <th style="width: 10px">#</th>
-                            <th>تاریخ ثبت نام</th>
-                            <th>نام کاربر</th>
-                            <th>ایمیل</th>
-                            <th>فعال </th>
-                            <th>ادمین/کاربر</th>
-                            <th>حذف</th>
-                            <th>حذف</th>
+                            <th>عنوان محصول</th>
+                            <th>تاریخ ثبت</th>
+                            <th>تاریخ ویرایش</th>
+                            <th>قیمت </th>
+                            <th>عکس</th>
+                            <th>خلاصه توضیحات</th>
+                            <th>توضیحات</th>
                             <th>حذف</th>
                         </tr>
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.Products)
                         {
                             var rowClass = item.IsDelete ? "table-danger" : "";
                             <tr class="@rowClass">
-                                <td>@Model.IndexOf(item)</td>
+                                <td>@Model.Products.IndexOf(item)</td>
                                 <td> @item.Titel </td>
                                 <td> @item.CreatDate </td>
                                 <td>@item.ModifiedDate</td>
@@ -62,13 +63,15 @@
                                 <td>@item.IsDelete</td>
 
                                 <td>
-                                    <a asp-action="Edit" asp-route-Id="@item.Id" class="btn btn-warning d-inline-flex align-items-center">
+                                    <a asp-action="Edit" asp-route-Id="@item.ProductId" class="btn btn-warning d-inline-flex align-items-center">
                                         <i class="fa fa-edit"></i><span class="mr-2">ویرایش</span>
                                     </a>
-                                    <a asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger d-inline-flex align-items-center">
+                                    <a asp-action="Delete" asp-route-Id="@item.ProductId" class="btn btn-danger d-inline-flex align-items-center">
                                         <i class="fa fa-trash"></i><span class="mr-2">حذف</span>
                                     </a>
-
+                                    <a asp-action="Delete" asp-route-Id="@item.ProductId" class="btn btn-danger d-inline-flex align-items-center">
+                                        <i class="fa "></i><span class="mr-2">جزئیات</span>
+                                    </a>
                                 </td>
 
 

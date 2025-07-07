@@ -172,12 +172,6 @@ namespace AppStore.Data.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductGroupId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductSubGroupId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ShortDescription")
                         .IsRequired()
                         .HasMaxLength(400)
@@ -201,9 +195,9 @@ namespace AppStore.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductGroupId");
+                    b.HasIndex("GroupId");
 
-                    b.HasIndex("ProductSubGroupId");
+                    b.HasIndex("SubGroupId");
 
                     b.ToTable("Products");
                 });
@@ -334,13 +328,13 @@ namespace AppStore.Data.Migrations
                 {
                     b.HasOne("AppStore.Domain.Models.ProductGroup", "ProductGroup")
                         .WithMany("Products")
-                        .HasForeignKey("ProductGroupId")
+                        .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("AppStore.Domain.Models.ProductSubGroup", "ProductSubGroup")
                         .WithMany("Products")
-                        .HasForeignKey("ProductSubGroupId")
+                        .HasForeignKey("SubGroupId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
