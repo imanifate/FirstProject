@@ -39,7 +39,7 @@ namespace AppStore.Domain.ViewModels
         public IFormFile? Image { get; set; }
 
         [Display(Name = "تگ")]
-        public string tag { get; set; }
+        public string tag { get; set; } = "0";
 
         [Display(Name = "بازدید")]
         public string Visit { get; set; }

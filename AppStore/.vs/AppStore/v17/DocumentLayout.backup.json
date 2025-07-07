@@ -6,36 +6,16 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\imani\\AppData\\Local\\SourceServer\\08cc51b26518f855479ba4b9235f6f545be3506109d20cafb2b4d2f66d76b8b8\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\controllers\\productsubgoupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\controllers\\productsubgoupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5AA745-FEBD-4BB2-80B8-FE1FCBB9C63C}|AppStore.Aplication\\AppStore.Aplication.csproj|d:\\asp\\project\\appstore\\appstore.aplication\\services\\implements\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5AA745-FEBD-4BB2-80B8-FE1FCBB9C63C}|AppStore.Aplication\\AppStore.Aplication.csproj|solutionrelative:appstore.aplication\\services\\implements\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4254901C-AF8A-41B9-B308-9AA46D6C2E3D}|AppStore.Data\\AppStore.Data.csproj|d:\\asp\\project\\appstore\\appstore.data\\repositoreis\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4254901C-AF8A-41B9-B308-9AA46D6C2E3D}|AppStore.Data\\AppStore.Data.csproj|solutionrelative:appstore.data\\repositoreis\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|d:\\asp\\project\\appstore\\appstore.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|solutionrelative:appstore.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\views\\product\\productcreat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\views\\product\\productcreat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|d:\\asp\\project\\appstore\\appstore.domain\\models\\productgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|solutionrelative:appstore.domain\\models\\productgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|d:\\asp\\project\\appstore\\appstore.domain\\viewmodels\\creatproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|solutionrelative:appstore.domain\\viewmodels\\creatproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF5AA745-FEBD-4BB2-80B8-FE1FCBB9C63C}|AppStore.Aplication\\AppStore.Aplication.csproj|d:\\asp\\project\\appstore\\appstore.aplication\\services\\implements\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5AA745-FEBD-4BB2-80B8-FE1FCBB9C63C}|AppStore.Aplication\\AppStore.Aplication.csproj|solutionrelative:appstore.aplication\\services\\implements\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\views\\product\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,8 +26,12 @@
       "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\views\\productsubgroup\\subgrouplist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\views\\productsubgroup\\creatsubgroup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\views\\productsubgroup\\creatsubgroup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|d:\\asp\\project\\appstore\\appstor.web\\areas\\admin\\controllers\\productsubgoupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5958E7ED-22CD-421E-83A2-FB0282C82D0A}|AppStor.Web\\AppStor.Web.csproj|solutionrelative:appstor.web\\areas\\admin\\controllers\\productsubgoupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|d:\\asp\\project\\appstore\\appstore.domain\\models\\productgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6874C7-4830-4550-8359-519B18F6E7C4}|AppStore.Domain\\AppStore.Domain.csproj|solutionrelative:appstore.domain\\models\\productgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF5AA745-FEBD-4BB2-80B8-FE1FCBB9C63C}|AppStore.Aplication\\AppStore.Aplication.csproj|d:\\asp\\project\\appstore\\appstore.aplication\\services\\interfaces\\iproductservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,14 +61,14 @@
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\imani\\AppData\\Local\\SourceServer\\08cc51b26518f855479ba4b9235f6f545be3506109d20cafb2b4d2f66d76b8b8\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\imani\\AppData\\Local\\SourceServer\\08cc51b26518f855479ba4b9235f6f545be3506109d20cafb2b4d2f66d76b8b8\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs [Read Only]",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwCQAAAAAAAAAAQAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwC0AAAAsAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T12:59:30.397Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ProductSubGoupController.cs",
               "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductSubGoupController.cs",
               "RelativeDocumentMoniker": "AppStor.Web\\Areas\\Admin\\Controllers\\ProductSubGoupController.cs",
@@ -92,8 +76,7 @@
               "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Controllers\\ProductSubGoupController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T12:57:44.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T12:57:44.578Z"
             },
             {
               "$type": "Document",
@@ -105,25 +88,11 @@
               "RelativeToolTip": "AppStore.Domain\\Models\\ProductGroup.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAcwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T12:25:43.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T12:25:43.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStore.Data\\Repositoreis\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "AppStore.Data\\Repositoreis\\ProductRepository.cs",
-              "ToolTip": "D:\\asp\\project\\AppStore\\AppStore.Data\\Repositoreis\\ProductRepository.cs",
-              "RelativeToolTip": "AppStore.Data\\Repositoreis\\ProductRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwEAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T12:18:50.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "SubGroupList.cshtml",
               "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\SubGroupList.cshtml",
               "RelativeDocumentMoniker": "AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\SubGroupList.cshtml",
@@ -131,51 +100,11 @@
               "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\SubGroupList.cshtml",
               "ViewState": "AgIAACgAAAAAAAAAAAAgwDAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T11:59:14.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStore.Domain\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "AppStore.Domain\\Models\\Product.cs",
-              "ToolTip": "D:\\asp\\project\\AppStore\\AppStore.Domain\\Models\\Product.cs",
-              "RelativeToolTip": "AppStore.Domain\\Models\\Product.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAuwC0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:39:03.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T11:59:14.451Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CreatProductViewModel.cs",
-              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStore.Domain\\ViewModels\\CreatProductViewModel.cs",
-              "RelativeDocumentMoniker": "AppStore.Domain\\ViewModels\\CreatProductViewModel.cs",
-              "ToolTip": "D:\\asp\\project\\AppStore\\AppStore.Domain\\ViewModels\\CreatProductViewModel.cs",
-              "RelativeToolTip": "AppStore.Domain\\ViewModels\\CreatProductViewModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:14:19.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreatSubGroup.cshtml",
-              "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\CreatSubGroup.cshtml",
-              "RelativeDocumentMoniker": "AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\CreatSubGroup.cshtml",
-              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\CreatSubGroup.cshtml",
-              "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Views\\ProductSubGroup\\CreatSubGroup.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T09:26:45.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "IProductServices.cs",
               "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStore.Aplication\\Services\\Interfaces\\IProductServices.cs",
               "RelativeDocumentMoniker": "AppStore.Aplication\\Services\\Interfaces\\IProductServices.cs",
@@ -193,49 +122,45 @@
               "RelativeDocumentMoniker": "AppStore.Aplication\\Services\\Implements\\ProductServices.cs",
               "ToolTip": "D:\\asp\\project\\AppStore\\AppStore.Aplication\\Services\\Implements\\ProductServices.cs",
               "RelativeToolTip": "AppStore.Aplication\\Services\\Implements\\ProductServices.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAgwH4AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T09:01:14.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T09:01:14.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ProductCreat.cshtml",
               "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductCreat.cshtml",
               "RelativeDocumentMoniker": "AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductCreat.cshtml",
               "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductCreat.cshtml",
               "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductCreat.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwEoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T08:33:29.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T08:33:29.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "ProductList.cshtml",
               "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductList.cshtml",
               "RelativeDocumentMoniker": "AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductList.cshtml",
               "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductList.cshtml",
               "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Views\\Product\\ProductList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwFIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T08:00:13.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T08:00:13.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs*",
-              "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs*",
-              "ViewState": "AgIAACMAAAAAAAAAAAA9wDQAAABsAAAAAAAAAA==",
+              "ToolTip": "D:\\asp\\project\\AppStore\\AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "AppStor.Web\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAwD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T07:55:12.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T07:55:12.575Z"
             }
           ]
         }

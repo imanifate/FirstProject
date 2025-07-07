@@ -22,7 +22,7 @@
 </section>
 
 
-<form asp-action="ProductCreat" asp-controller="Product" asp-area="Admin" enctype="multipart/form-data" method="post" role="form">
+<form asp-action="ProductCreat" asp-controller="Product" asp-area="Admin" enctype="multipart/form-data" method="post">
 
    <div class="card-body">
         <input asp-for="SubGroupId" type="hidden" class="form-control">
@@ -43,30 +43,32 @@
         </div>
         <div class="form-group">
             <label asp-for="ShortDescription" for="exampleInput"> خلاصه توضیحات</label>
-            <input asp-for="ShortDescription" type="text" class="form-control" placeholder="خلاصه توضیحات">
+            <textarea asp-for="ShortDescription" type="text" class="form-control" placeholder="خلاصه توضیحات"></textarea>
         </div>
         <div class="form-group">
             <label asp-for="Description" for="exampleInput"> توضیحات</label>
-            <input asp-for="Description" type="text" class="form-control" placeholder="توضیحات  را وارد کنید">
+            <textarea asp-for="Description" type="text" class="form-control" placeholder="توضیحات  را وارد کنید"></textarea>
         </div>
         <div class="form-group">
             <label asp-for="Image" for="exampleInput"> عکس</label>
             <input asp-for="Image" type="file" class="form-control" >
         </div>
         <div class="form-group">
+            <label>گالری تصاویر</label>
+            <input asp-for="ImgGalleries" type="file" class="form-control" multiple>
+        </div>
+        <div class="form-group">
             <label asp-for="tag" for="exampleInput"> </label>
             <input asp-for="tag" type="text" class="form-control">
         </div>
-        <div class="form-group">
-            <label asp-for="Visit" for="exampleInput"> بازدید</label>
-            <input asp-for="Visit" type="text" class="form-control" >
-        </div>
-   </div>
+          </div>
 
     <div class="card-footer">
         <button type="submit" class="btn btn-primary">ارسال</button>
     </div>
 </form>
+
+
 
    @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
@@ -74,6 +76,7 @@
     <script>
         CKEDITOR.replace( 'Description' );
     </script>
+
     <script>
         function ImgPre(input) {
           if (input.files[0]) {
@@ -83,11 +86,6 @@
             }
             uploadimg.readAsDataURL(input.files[0]);
           }
-        }
-
-        function loadSubGroup()
-        {
-            $("#subs").load("/Admin/Products/GetSubGroup?groupId="+$("#GroupId").val());
         }
     </script>
 }
