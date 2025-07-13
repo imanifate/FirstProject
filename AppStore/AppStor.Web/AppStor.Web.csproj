@@ -28,4 +28,10 @@
     <Folder Include="Areas\UserPanel\Views\Home\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Areas\Admin\Controllers\ProductController.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html class="no-js" dir="rtl" lang="fa-IR">
 <head>
     <meta charset="UTF-8">
@@ -91,7 +92,7 @@
     </nav>
     <!-- End Mega Menu -->
     <!-- slider -->
-   @RenderSection("Slider",false);
+    @RenderSection("Slider", false);
     <!-- End slider -->
 
     <div class="container margin-top-25">
@@ -205,6 +206,31 @@
                         </li>
                     </ul>
                 </article>
+
+               @*  <article>
+                    <ul class="category-menu">
+                        @foreach (var category in Model)
+                        {
+                            <li>
+                                <h2>
+                                    <a asp-action="GroupProducts" asp-route-id="@category.GroupId">@category.GroupTitle</a>
+                                </h2>
+                                <ul class="child-category-menu">
+                                    @foreach (var sub in category.SubCategories)
+                                    {
+                                        <li>
+                                            <h2>
+                                                <a asp-action="ProductList" asp-route-id="@sub.SubGroupId">@sub.SubGroupTitle</a>
+                                                <span> (@sub.ProductCount) </span>
+                                            </h2>
+                                        </li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                </article>
+ *@
             </section>
             <!-- End Category -->
             <!-- Category -->

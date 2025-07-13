@@ -42,7 +42,7 @@ namespace AppStore.Domain.ViewModels
         public string tag { get; set; } = "0";
 
         [Display(Name = "بازدید")]
-        public string Visit { get; set; }
+        public string? Visit { get; set; } = "0";
 
         [Display(Name = "گالری تصاویر")]
         public List<IFormFile>? ImgGalleries { get; set; }

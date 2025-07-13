@@ -3681,6 +3681,18 @@
       "PackagePath": "staticwebassets\\ProductImages\\07d715aa-e29a-41ce-8178-2849f969151a.jpg"
     },
     {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\0f8e8f05-a628-4b23-a2b3-be3987e02aee.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\0f8e8f05-a628-4b23-a2b3-be3987e02aee.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\31752873-a617-4d98-86d0-4918c71d96b0.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\31752873-a617-4d98-86d0-4918c71d96b0.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\3c11b6d0-bb34-4ad9-92a9-260cc46872f3.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\3c11b6d0-bb34-4ad9-92a9-260cc46872f3.jpg"
+    },
+    {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\3e9ebd74-5251-4c08-ba01-db76688ed257.jpg",
       "PackagePath": "staticwebassets\\ProductImages\\3e9ebd74-5251-4c08-ba01-db76688ed257.jpg"
     },
@@ -3691,6 +3703,10 @@
     {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\4b8b3e53-f5ac-4632-a395-457bbc8a4b66.jpg",
       "PackagePath": "staticwebassets\\ProductImages\\4b8b3e53-f5ac-4632-a395-457bbc8a4b66.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\5261b0ba-767f-4d64-a10c-4b8dce3af4d3.webp",
+      "PackagePath": "staticwebassets\\ProductImages\\5261b0ba-767f-4d64-a10c-4b8dce3af4d3.webp"
     },
     {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\55460ba1-698d-4214-bfef-a831e8116ac6.jpg",
@@ -3705,12 +3721,20 @@
       "PackagePath": "staticwebassets\\ProductImages\\771820ce-25b3-4d1b-a1f4-f5ceb75d2b4b.jpg"
     },
     {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\790ab560-38f0-41e6-9508-3fd59983a817.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\790ab560-38f0-41e6-9508-3fd59983a817.jpg"
+    },
+    {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\a5551a00-ee8e-4144-a305-20cd4e17c95d.jpg",
       "PackagePath": "staticwebassets\\ProductImages\\a5551a00-ee8e-4144-a305-20cd4e17c95d.jpg"
     },
     {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\aa3ca967-0551-4753-a4ee-413e04335f10.jpg",
       "PackagePath": "staticwebassets\\ProductImages\\aa3ca967-0551-4753-a4ee-413e04335f10.jpg"
+    },
+    {
+      "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\c9c29952-9693-4ecb-b1af-84a68928d3fd.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\c9c29952-9693-4ecb-b1af-84a68928d3fd.jpg"
     },
     {
       "Id": "D:\\asp\\Project\\AppStore\\AppStor.Web\\wwwroot\\ProductImages\\f09ba104-7437-46fd-b86f-5e311fa795a8.jpg",

@@ -11,7 +11,7 @@ namespace AppStor.Web.Areas.Admin.Controllers
     public class ProductSubGroupController(IProductSubGroupServices productSubGroupServices) : Controller
     {
 
-        [HttpGet("subGroupList")]
+        [HttpGet("SubGroupList")]
         public IActionResult SubGroupList(int id)
         {
 
@@ -30,7 +30,7 @@ namespace AppStor.Web.Areas.Admin.Controllers
 
             return View(creatProductSubGroupViewModels);
         }
-
+        
         [HttpPost("CreatSubGroup")]
         public IActionResult CreatSubGroup(CreatProductSubGroupViewModels creatProductSubGroupViewModels)
         {
